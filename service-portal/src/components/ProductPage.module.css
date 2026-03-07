@@ -1,0 +1,248 @@
+/* Header */
+.header {
+  background-color: #1F1F22;
+  padding: 2rem 2rem 2.5rem;
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.backLink {
+  font-family: 'Bulo', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: #AFAFBC;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s;
+}
+
+.backLink:hover {
+  color: #FF423E;
+  text-decoration: none;
+}
+
+.productHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.productImage {
+  background: #ffffff;
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0.75rem;
+  flex-shrink: 0;
+}
+
+.productImage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.productName {
+  font-family: 'PFDin', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.25rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.productDescription {
+  font-family: 'Bulo', sans-serif;
+  font-size: 1rem;
+  color: #AFAFBC;
+  margin: 0;
+}
+
+/* Main Content */
+.main {
+  background-color: #f2f2f2;
+  padding: 2.5rem 0 4rem;
+  min-height: 60vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Section Header */
+.sectionHeader {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.sectionTitle {
+  font-family: 'PFDin', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1D1D28;
+  margin: 0;
+}
+
+.sectionSubtitle {
+  font-family: 'Bulo', sans-serif;
+  font-size: 0.75rem;
+  color: #AFAFBC;
+}
+
+/* Guide Grid */
+.guideGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+/* Guide Card */
+.guideCard {
+  background: #ffffff;
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: row;
+}
+
+.guideCard:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.guideIcon {
+  width: 80px;
+  min-height: 100%;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #E5E6E8;
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.guideInfo {
+  padding: 1.25rem;
+  flex: 1;
+}
+
+.guideTitle {
+  font-family: 'PFDin', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 0 0.35rem 0;
+  color: #1D1D28;
+}
+
+.guideDescription {
+  font-family: 'Bulo', sans-serif;
+  font-size: 0.875rem;
+  color: #4E4E5E;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.5;
+}
+
+.guideMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Difficulty badges */
+.difficulty {
+  font-family: 'Bulo', sans-serif;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 2px;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+.difficultyEasy {
+  background: #27AE60;
+}
+
+.difficultyModerate {
+  background: #dadada;
+}
+
+.difficultyAdvanced {
+  background: #FF423E;
+}
+
+.guideTime {
+  font-family: 'Bulo', sans-serif;
+  font-size: 0.75rem;
+  color: #AFAFBC;
+}
+
+.guideVideo {
+  font-family: 'Bulo', sans-serif;
+  font-size: 0.8rem;
+  color: #FF423E;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem;
+  }
+  
+  .productHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .productIcon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+  
+  .productName {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .guideGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .guideCard {
+    flex-direction: column;
+  }
+  
+  .guideIcon {
+    width: 100%;
+    height: 80px;
+    border-right: none;
+    border-bottom: 1px solid #E5E6E8;
+  }
+}

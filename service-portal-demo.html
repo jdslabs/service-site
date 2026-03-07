@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JDS Labs Service Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1D1D28;
+    --paper: #f2f2f2;
+    --cream: #ffffff;
+    --accent: #FF423E;
+    --accent2: #4E4E5E;
+    --muted: #AFAFBC;
+    --border: #E5E6E8;
+    --success: #27AE60;
+    --warn: #FF423E;
+    --nav-bg: #1F1F22;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--paper);
+    color: #4E4E5E;
+    line-height: 1.5;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ── TOP NAV ── */
+  .topbar {
+    background: var(--nav-bg);
+    color: #f5f7fa;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: none;
+  }
+
+  .topbar-logo {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #ffffff;
+    padding-right: 2rem;
+    border-right: 1px solid #2F2F3D;
+    height: 100%;
+  }
+
+  .topbar-logo span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    background: var(--accent);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 2px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .topbar-search {
+    flex: 1;
+    max-width: 340px;
+    margin: 0 2rem;
+    position: relative;
+  }
+
+  .topbar-search input {
+    width: 100%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #f5f7fa;
+    padding: 8px 14px 8px 36px;
+    border-radius: 2px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    outline: none;
+    transition: all 0.3s;
+  }
+
+  .topbar-search input::placeholder { color: rgba(255,255,255,0.35); }
+  .topbar-search input:focus { border-color: var(--accent); background: rgba(255,255,255,0.1); }
+
+  .topbar-search svg {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.35;
+  }
+
+  .topbar-links {
+    display: flex;
+    gap: 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .topbar-links a {
+    color: #f5f7fa;
+    text-decoration: none;
+    transition: all 0.3s;
+    padding: 1.1rem 1.5rem;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+  }
+  .topbar-links a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--nav-bg);
+    color: #f5f7fa;
+    padding: 4rem 2rem 3.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: none;
+  }
+
+  .hero-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    position: relative;
+    font-weight: 500;
+  }
+
+  .hero h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #ffffff;
+  }
+
+  .hero p {
+    color: var(--muted);
+    font-size: 1rem;
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* ── LAYOUT ── */
+  .layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: calc(100vh - 56px - 200px);
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    border-right: 1px solid var(--border);
+    padding: 2rem 0;
+    position: sticky;
+    top: 56px;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+  }
+
+  .sidebar-section {
+    margin-bottom: 2rem;
+  }
+
+  .sidebar-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink);
+    padding: 0 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    color: #4E4E5E;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .sidebar-item:hover {
+    background: #f8f8f8;
+    color: var(--accent);
+  }
+
+  .sidebar-item.active {
+    background: #f8f8f8;
+    border-left-color: var(--accent);
+    font-weight: 500;
+    color: var(--accent);
+  }
+
+  .sidebar-item .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #dadada;
+    flex-shrink: 0;
+  }
+
+  .sidebar-item.active .dot { background: var(--accent); }
+  .sidebar-item:hover .dot { background: var(--accent); }
+
+  /* ── MAIN CONTENT ── */
+  .main {
+    padding: 2.5rem 3rem;
+    max-width: 820px;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    letter-spacing: 0.02em;
+  }
+
+  .breadcrumb a { color: var(--accent); text-decoration: none; transition: color 0.3s; }
+  .breadcrumb a:hover { color: #dadada; }
+
+  /* Guide header */
+  .guide-header {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .guide-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.75rem;
+    color: var(--ink);
+  }
+
+  .guide-meta {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .meta-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+  }
+
+  .difficulty {
+    background: #dadada;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+  }
+
+  .difficulty.easy { background: var(--success); color: #ffffff; }
+  .difficulty.hard { background: var(--accent); color: #ffffff; }
+
+  /* Info boxes */
+  .info-box {
+    border-left: 4px solid;
+    padding: 1rem 1.25rem;
+    border-radius: 0 2px 2px 0;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  .info-box.warning {
+    border-color: var(--accent);
+    background: rgba(255, 66, 62, 0.06);
+    color: #4E4E5E;
+  }
+
+  .info-box.tip {
+    border-color: var(--success);
+    background: rgba(39, 174, 96, 0.06);
+    color: #4E4E5E;
+  }
+
+  .info-box strong {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--ink);
+  }
+
+  /* Tools & Parts */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .card {
+    border: none;
+    border-radius: 2px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  }
+
+  .card-header {
+    background: #f8f8f8;
+    padding: 0.75rem 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink);
+    font-weight: 500;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .card ul {
+    list-style: none;
+    padding: 0.75rem 1rem;
+  }
+
+  .card ul li {
+    font-size: 0.875rem;
+    padding: 0.4rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid #f2f2f2;
+    color: #4E4E5E;
+  }
+
+  .card ul li:last-child { border-bottom: none; }
+
+  .card ul li::before {
+    content: '•';
+    color: var(--accent);
+    font-size: 0.9rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  /* Video embed */
+  .video-wrapper {
+    background: var(--nav-bg);
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    position: relative;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .video-placeholder {
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .play-btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    transition: transform 0.2s;
+  }
+
+  .video-wrapper:hover .play-btn { transform: scale(1.08); }
+
+  .video-placeholder p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+
+  .video-caption {
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Steps */
+  .steps-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 2rem 0 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+  }
+
+  .steps-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .step {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .step-num-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 600;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-line {
+    width: 2px;
+    flex: 1;
+    background: var(--border);
+    margin: 4px 0;
+    min-height: 24px;
+  }
+
+  .step:last-child .step-line { display: none; }
+
+  .step-body {
+    padding: 0 0 2rem 1.25rem;
+  }
+
+  .step-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    padding-top: 6px;
+    color: var(--ink);
+  }
+
+  .step-desc {
+    font-size: 0.9rem;
+    color: #4E4E5E;
+    line-height: 1.6;
+  }
+
+  .step-img {
+    margin-top: 0.875rem;
+    background: #f8f8f8;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+  }
+
+  /* Feedback */
+  .feedback {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: gap;
+  }
+
+  .feedback p {
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+
+  .feedback-btns {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    border-radius: 2px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid var(--border);
+    background: white;
+    color: var(--ink);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .btn:hover { background: #f8f8f8; border-color: #ccc; }
+
+  .btn.primary {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+
+  .btn.primary:hover { background: #363636; border-color: #363636; }
+
+  /* Product grid on home */
+  .product-grid {
+    padding: 2.5rem 3rem;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .section-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    color: var(--ink);
+  }
+
+  .section-heading small {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--muted);
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .product-card {
+    background: white;
+    border: none;
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  }
+
+  .product-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+  }
+
+  .product-img {
+    height: 140px;
+    background: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--border);
+    font-size: 2.5rem;
+  }
+
+  .product-info {
+    padding: 1rem;
+  }
+
+  .product-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+    color: var(--ink);
+  }
+
+  .product-count {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+
+  .product-tags {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 0.625rem;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    padding: 4px 8px;
+    background: #dadada;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    transition: background-color 0.3s;
+  }
+  
+  .tag:hover {
+    background: var(--accent);
+  }
+
+  /* Tabs to switch views */
+  .demo-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    background: white;
+    position: sticky;
+    top: 56px;
+    z-index: 90;
+  }
+
+  .demo-tab {
+    padding: 1rem 1.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--muted);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -1px;
+    transition: all 0.3s;
+    user-select: none;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .demo-tab:hover { color: var(--ink); }
+  .demo-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+
+  /* File structure view */
+  .file-tree {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    line-height: 2;
+    padding: 2rem 3rem;
+  }
+
+  .file-tree .dir { color: var(--accent2); font-weight: 500; }
+  .file-tree .file { color: var(--ink); }
+  .file-tree .comment { color: var(--muted); font-style: italic; }
+  .file-tree .indent1 { padding-left: 1.5rem; }
+  .file-tree .indent2 { padding-left: 3rem; }
+  .file-tree .indent3 { padding-left: 4.5rem; }
+
+  .file-tree-card {
+    background: var(--nav-bg);
+    color: #f5f7fa;
+    border-radius: 2px;
+    padding: 1.5rem 2rem;
+    max-width: 680px;
+    margin: 2rem auto;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .file-tree-card .dir { color: var(--accent); }
+  .file-tree-card .file { color: #AFAFBC; }
+  .file-tree-card .comment { color: #7E7E87; font-style: italic; }
+
+  .config-block {
+    background: var(--nav-bg);
+    color: #AFAFBC;
+    border-radius: 2px;
+    padding: 1.5rem 2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    line-height: 1.9;
+    max-width: 680px;
+    margin: 1.5rem auto;
+    overflow-x: auto;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .config-block .key { color: var(--accent); }
+  .config-block .val { color: #f5f7fa; }
+  .config-block .comment { color: #7E7E87; }
+
+  .setup-steps {
+    max-width: 680px;
+    margin: 0 auto;
+    counter-reset: setup;
+  }
+
+  .setup-step {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border);
+    counter-increment: setup;
+  }
+
+  .setup-step::before {
+    content: counter(setup);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+    font-weight: 600;
+  }
+
+  .setup-step h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.25rem; color: var(--ink); }
+  .setup-step p { font-size: 0.875rem; color: #4E4E5E; line-height: 1.5; }
+
+  code {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8em;
+    background: #ffffff;
+    padding: 2px 6px;
+    border-radius: 2px;
+    border: 1px solid var(--border);
+    color: var(--accent);
+  }
+
+  /* Footer */
+  footer {
+    background: var(--nav-bg);
+    border-top: none;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    color: #7E7E87;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="topbar">
+  <div class="topbar-logo">
+    JDS Labs <span>Service</span>
+  </div>
+  <div class="topbar-search">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input type="text" placeholder="Search guides, part numbers…">
+  </div>
+  <div class="topbar-links">
+    <a href="#">All Products</a>
+    <a href="#">Videos</a>
+    <a href="#">Contact Support</a>
+  </div>
+</nav>
+
+<!-- DEMO TABS -->
+<div class="demo-tabs">
+  <div class="demo-tab active" onclick="switchTab('home')">🏠 Home Page</div>
+  <div class="demo-tab" onclick="switchTab('guide')">📄 Guide Page</div>
+  <div class="demo-tab" onclick="switchTab('setup')">⚙️ Setup Guide</div>
+</div>
+
+<!-- ══════════ TAB: HOME ══════════ -->
+<div id="tab-home" class="tab-pane active">
+
+  <div class="hero">
+    <div class="hero-eyebrow">service.jdslabs.com</div>
+    <h1>Service &amp; Repair Guides</h1>
+    <p>Step-by-step manuals and video walkthroughs for JDS Labs products.</p>
+  </div>
+
+  <div class="product-grid">
+    <div class="section-heading">
+      Product Lines <small>— Select a product to browse guides</small>
+    </div>
+
+    <div class="grid-3">
+      <a class="product-card" onclick="switchTab('guide')">
+        <div class="product-img">⚙️</div>
+        <div class="product-info">
+          <div class="product-name">X200 Series</div>
+          <div class="product-count">12 guides · 8 videos</div>
+          <div class="product-tags">
+            <span class="tag">Motor</span>
+            <span class="tag">Belt</span>
+            <span class="tag">Electronics</span>
+          </div>
+        </div>
+      </a>
+      <div class="product-card">
+        <div class="product-img">🔧</div>
+        <div class="product-info">
+          <div class="product-name">ProLine 500</div>
+          <div class="product-count">9 guides · 5 videos</div>
+          <div class="product-tags">
+            <span class="tag">Blade</span>
+            <span class="tag">Housing</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">⚡</div>
+        <div class="product-info">
+          <div class="product-name">EC-Compact</div>
+          <div class="product-count">6 guides · 3 videos</div>
+          <div class="product-tags">
+            <span class="tag">Battery</span>
+            <span class="tag">PCB</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">🛠️</div>
+        <div class="product-info">
+          <div class="product-name">WorkMax Pro</div>
+          <div class="product-count">14 guides · 11 videos</div>
+          <div class="product-tags">
+            <span class="tag">Gearbox</span>
+            <span class="tag">Seals</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">🔩</div>
+        <div class="product-info">
+          <div class="product-name">Precision R-Series</div>
+          <div class="product-count">7 guides · 4 videos</div>
+          <div class="product-tags">
+            <span class="tag">Calibration</span>
+            <span class="tag">Alignment</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" style="border: 2px dashed #dadada; background: transparent; display:flex; align-items:center; justify-content:center; min-height: 180px; box-shadow: none;">
+        <div style="text-align:center; color: var(--muted);">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem; color: #dadada;">+</div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase;">Add Product Line</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ══════════ TAB: GUIDE PAGE ══════════ -->
+<div id="tab-guide" class="tab-pane">
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">X200 Series</div>
+        <div class="sidebar-item"><span class="dot"></span> Overview & Specs</div>
+        <div class="sidebar-item"><span class="dot"></span> Safety Information</div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Motor & Drive</div>
+        <div class="sidebar-item active"><span class="dot"></span> Motor Replacement</div>
+        <div class="sidebar-item"><span class="dot"></span> Belt Adjustment</div>
+        <div class="sidebar-item"><span class="dot"></span> Drive Shaft Removal</div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Electronics</div>
+        <div class="sidebar-item"><span class="dot"></span> Control Board Swap</div>
+        <div class="sidebar-item"><span class="dot"></span> Sensor Calibration</div>
+        <div class="sidebar-item"><span class="dot"></span> Fuse Replacement</div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Housing & Seals</div>
+        <div class="sidebar-item"><span class="dot"></span> Gasket Replacement</div>
+        <div class="sidebar-item"><span class="dot"></span> Panel Removal</div>
+      </div>
+    </aside>
+
+    <!-- Guide Content -->
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="#">All Products</a> / <a href="#">X200 Series</a> / Motor Replacement
+      </div>
+
+      <div class="guide-header">
+        <h1 class="guide-title">X200 Motor Replacement</h1>
+        <div class="guide-meta">
+          <span class="meta-pill"><span class="difficulty">Moderate</span></span>
+          <span class="meta-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            45 – 60 min
+          </span>
+          <span class="meta-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            Part No. MOT-X2-440
+          </span>
+          <span class="meta-pill" style="color: var(--success);">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            In Stock
+          </span>
+        </div>
+      </div>
+
+      <div class="info-box warning">
+        <strong>⚠ Safety Warning</strong>
+        Disconnect and lock out the power supply before beginning. Capacitors may hold charge for up to 3 minutes after power-off.
+      </div>
+
+      <!-- Video -->
+      <div class="video-wrapper">
+        <div class="video-placeholder">
+          <div class="play-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <p>X200 Motor Replacement — Full Walkthrough (8:42)</p>
+        </div>
+      </div>
+      <p class="video-caption">Embed your YouTube or Vimeo URL here. No hosting required.</p>
+
+      <!-- Tools & Parts -->
+      <div class="two-col">
+        <div class="card">
+          <div class="card-header">🔧 Tools Required</div>
+          <ul>
+            <li>T25 Torx screwdriver</li>
+            <li>5mm hex key</li>
+            <li>Needle-nose pliers</li>
+            <li>Multimeter</li>
+            <li>Torque wrench (5–8 Nm)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-header">📦 Parts & Materials</div>
+          <ul>
+            <li>Motor assembly MOT-X2-440</li>
+            <li>Gasket set GSK-002 (1×)</li>
+            <li>Threadlocker (medium)</li>
+            <li>Dielectric grease</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Steps -->
+      <div class="steps-label">Procedure</div>
+
+      <div class="step">
+        <div class="step-num-col">
+          <div class="step-num">1</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <div class="step-title">Remove the access panel</div>
+          <div class="step-desc">Using the T25 Torx driver, remove the four M4 screws from the rear access panel. Set the panel aside — the gasket is reusable if undamaged.</div>
+          <div class="step-img">[ Photo: Rear panel with screw locations highlighted ]</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num-col">
+          <div class="step-num">2</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <div class="step-title">Disconnect motor wiring harness</div>
+          <div class="step-desc">Locate the 6-pin connector (white, marked M1) on the left side of the motor. Press the release tab and pull straight back. Do not twist.</div>
+          <div class="step-img">[ Photo: Connector location with release tab indicated ]</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num-col">
+          <div class="step-num">3</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <div class="step-title">Remove the motor mounting bolts</div>
+          <div class="step-desc">Using the 5mm hex key, remove all three mounting bolts (M6×20mm). Support the motor as you remove the final bolt — it will become free.</div>
+          <div class="info-box tip" style="margin-top: 0.75rem;">
+            <strong>💡 Tip</strong>
+            Mark the motor orientation with a marker before removal — the replacement must be installed in the same orientation.
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num-col">
+          <div class="step-num">4</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <div class="step-title">Install replacement motor</div>
+          <div class="step-desc">Position the new motor (MOT-X2-440) in the same orientation. Hand-tighten all three bolts before torquing to <strong>6 Nm</strong> in a star pattern. Apply a small amount of threadlocker to each bolt.</div>
+          <div class="step-img">[ Photo: Torque sequence diagram ]</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num-col">
+          <div class="step-num">5</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <div class="step-title">Reconnect and test</div>
+          <div class="step-desc">Reconnect the wiring harness until it clicks. Replace the access panel and torque the four screws to 3 Nm. Restore power and run a 30-second no-load test before returning to service.</div>
+        </div>
+      </div>
+
+      <!-- Feedback -->
+      <div class="feedback">
+        <p>Was this guide helpful?</p>
+        <div class="feedback-btns">
+          <button class="btn">👍 Yes</button>
+          <button class="btn">👎 Needs work</button>
+          <button class="btn primary">Contact Support</button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- ══════════ TAB: SETUP ══════════ -->
+<div id="tab-setup" class="tab-pane">
+  <div style="max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem;">
+
+    <h2 style="font-family: 'Inter', sans-serif; font-size: 1.75rem; font-weight: 700; letter-spacing:-0.01em; margin-bottom: 0.5rem; color: var(--ink);">Getting Started with Docusaurus</h2>
+    <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem;">Everything you need to go from zero to a live service portal at <code>service.jdslabs.com</code></p>
+
+    <div class="setup-steps">
+      <div class="setup-step">
+        <div>
+          <h4>Install Node.js</h4>
+          <p>Download Node.js (v18+) from <code>nodejs.org</code>. This is the only software prerequisite.</p>
+        </div>
+      </div>
+      <div class="setup-step">
+        <div>
+          <h4>Scaffold your Docusaurus project</h4>
+          <p>Run <code>npx create-docusaurus@latest service-portal classic</code> in your terminal. This generates the full folder structure below.</p>
+        </div>
+      </div>
+      <div class="setup-step">
+        <div>
+          <h4>Replace the config with yours</h4>
+          <p>Edit <code>docusaurus.config.js</code> — set your site name, URL, and subdomain. See the config sample below.</p>
+        </div>
+      </div>
+      <div class="setup-step">
+        <div>
+          <h4>Drop your content into /docs</h4>
+          <p>Each guide is a plain <code>.md</code> (Markdown) file. Paste your existing content in, add a frontmatter block at the top, and embed your video URL.</p>
+        </div>
+      </div>
+      <div class="setup-step">
+        <div>
+          <h4>Deploy to Netlify (free)</h4>
+          <p>Push to GitHub, connect the repo at <code>netlify.com</code>, and point your DNS <code>service</code> subdomain at Netlify. Live in under 30 minutes.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Inter',sans-serif; font-size: 1.1rem; font-weight: 600; margin: 2.5rem 0 0.5rem; color: var(--ink);">Recommended Folder Structure</h3>
+
+    <div class="file-tree-card">
+      <div><span class="dir">service-portal/</span></div>
+      <div class="indent1"><span class="dir">docs/</span> <span class="comment">← your guides live here</span></div>
+      <div class="indent2"><span class="dir">x200-series/</span></div>
+      <div class="indent3"><span class="file">intro.md</span></div>
+      <div class="indent3"><span class="file">motor-replacement.md</span></div>
+      <div class="indent3"><span class="file">belt-adjustment.md</span></div>
+      <div class="indent2"><span class="dir">proline-500/</span></div>
+      <div class="indent3"><span class="file">intro.md</span></div>
+      <div class="indent1"><span class="dir">static/</span> <span class="comment">← images, PDFs, diagrams</span></div>
+      <div class="indent2"><span class="dir">img/</span></div>
+      <div class="indent1"><span class="file">docusaurus.config.js</span> <span class="comment">← main config</span></div>
+      <div class="indent1"><span class="file">sidebars.js</span> <span class="comment">← controls nav sidebar</span></div>
+    </div>
+
+    <h3 style="font-family:'Inter',sans-serif; font-size: 1.1rem; font-weight: 600; margin: 2rem 0 0.5rem; color: var(--ink);">Sample Guide File</h3>
+    <p style="font-size: 0.85rem; color: var(--muted); margin-bottom: 0.75rem;">Every guide starts with a frontmatter block, then plain Markdown:</p>
+
+    <div class="config-block">
+<span class="comment">--- (frontmatter) ---</span>
+<span class="key">id</span>: <span class="val">motor-replacement</span>
+<span class="key">title</span>: <span class="val">X200 Motor Replacement</span>
+<span class="key">sidebar_label</span>: <span class="val">Motor Replacement</span>
+<span class="key">tags</span>: <span class="val">[motor, x200, moderate]</span>
+---
+
+<span class="comment">## Tools Required</span>
+- T25 Torx screwdriver
+- 5mm hex key
+
+<span class="comment">## Video</span>
+&lt;iframe src="https://www.youtube.com/embed/YOUR_ID"
+  width="100%" height="400" /&gt;
+
+<span class="comment">## Step 1 — Remove the access panel</span>
+Remove the four M4 screws...
+    </div>
+
+    <h3 style="font-family:'Inter',sans-serif; font-size: 1.1rem; font-weight: 600; margin: 2rem 0 0.5rem; color: var(--ink);">Key Config Settings</h3>
+    <div class="config-block">
+<span class="comment">// docusaurus.config.js</span>
+<span class="key">title</span>: <span class="val">'JDS Labs Service Portal'</span>,
+<span class="key">url</span>: <span class="val">'https://service.jdslabs.com'</span>,
+<span class="key">baseUrl</span>: <span class="val">'/'</span>,
+<span class="key">organizationName</span>: <span class="val">'jdslabs'</span>,
+<span class="key">projectName</span>: <span class="val">'service-portal'</span>,
+
+<span class="comment">// Enable Algolia search (free for public docs)</span>
+<span class="key">algolia</span>: {
+  <span class="key">appId</span>: <span class="val">'YOUR_APP_ID'</span>,
+  <span class="key">apiKey</span>: <span class="val">'YOUR_SEARCH_KEY'</span>,
+  <span class="key">indexName</span>: <span class="val">'service-portal'</span>,
+}
+    </div>
+
+    <div class="info-box tip" style="margin-top: 2rem;">
+      <strong>💡 Next steps</strong>
+      Once your site is live, submit it to Algolia DocSearch (free for open docs) for instant full-text search across all your guides. Apply at <code>docsearch.algolia.com</code>.
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span>service.jdslabs.com</span>
+  <span>© JDS Labs, Inc.</span>
+</footer>
+
+<script>
+function switchTab(id) {
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.demo-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  const tabs = ['home','guide','setup'];
+  document.querySelectorAll('.demo-tab')[tabs.indexOf(id)].classList.add('active');
+}
+</script>
+</body>
+</html>

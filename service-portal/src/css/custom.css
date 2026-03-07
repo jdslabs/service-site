@@ -1,0 +1,320 @@
+/**
+ * JDS Labs Service Portal - Custom CSS
+ * Based on JDS Labs brand guidelines
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+/* PFDindisplay - Headers & Titles */
+@font-face {
+  font-family: 'PFDin';
+  src: url('/fonts/PFDinDisplayPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PFDin';
+  src: url('/fonts/PFDinDisplayPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bulo - Body Text */
+@font-face {
+  font-family: 'Bulo';
+  src: url('/fonts/Bulo-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bulo';
+  src: url('/fonts/Bulo-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* JDS Labs Brand Colors */
+  --ifm-color-primary: #FF423E;
+  --ifm-color-primary-dark: #E63B38;
+  --ifm-color-primary-darker: #D93633;
+  --ifm-color-primary-darkest: #B32D2A;
+  --ifm-color-primary-light: #FF5854;
+  --ifm-color-primary-lighter: #FF6E6A;
+  --ifm-color-primary-lightest: #FF9895;
+  
+  /* Typography */
+  --ifm-font-family-base: 'Bulo', system-ui, -apple-system, sans-serif;
+  --ifm-font-family-monospace: 'IBM Plex Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --ifm-heading-font-family: 'PFDin', system-ui, -apple-system, sans-serif;
+  
+  /* Layout */
+  --ifm-global-radius: 2px;
+  --ifm-code-font-size: 90%;
+  --ifm-code-border-radius: 2px;
+  
+  /* Colors */
+  --ifm-background-color: #f2f2f2;
+  --ifm-navbar-background-color: #1F1F22;
+  --ifm-navbar-link-color: #f5f7fa;
+  --ifm-footer-background-color: #1F1F22;
+  
+  /* Text */
+  --ifm-font-color-base: #4E4E5E;
+  --ifm-heading-color: #1D1D28;
+  
+  /* Sidebar */
+  --ifm-menu-color: #4E4E5E;
+  --ifm-menu-color-active: #FF423E;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(255, 66, 62, 0.1);
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #1F1F22;
+  box-shadow: none;
+  height: 56px;
+}
+
+.navbar__title {
+  font-family: 'PFDin', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.navbar__link {
+  font-family: 'Bulo', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #f5f7fa;
+  transition: color 0.3s;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #FF423E;
+}
+
+.navbar__item {
+  padding: 0 1rem;
+}
+
+/* Sidebar styling */
+.menu__link {
+  font-size: 0.9rem;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.menu__link:hover {
+  background-color: #f8f8f8;
+  color: #FF423E;
+}
+
+.menu__link--active {
+  background-color: #f8f8f8;
+  color: #FF423E;
+  font-weight: 600;
+}
+
+.menu__list-item-collapsible .menu__link {
+  font-family: 'PFDin', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #1D1D28;
+}
+
+/* Content area */
+.main-wrapper {
+  background-color: #f2f2f2;
+}
+
+article {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PFDin', sans-serif;
+  color: #1D1D28;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Code blocks */
+code {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #f8f8f8;
+  border: 1px solid #E5E6E8;
+  border-radius: 2px;
+  color: #FF423E;
+  padding: 2px 6px;
+}
+
+pre code {
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Buttons */
+.button {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.button--primary {
+  background-color: #FF423E;
+  border-color: #FF423E;
+}
+
+.button--primary:hover {
+  background-color: #363636;
+  border-color: #363636;
+}
+
+/* Admonitions (info boxes) */
+.alert {
+  border-radius: 2px;
+  border-left-width: 4px;
+}
+
+.alert--warning {
+  --ifm-alert-background-color: rgba(255, 66, 62, 0.06);
+  --ifm-alert-border-color: #FF423E;
+}
+
+.alert--info {
+  --ifm-alert-background-color: rgba(39, 174, 96, 0.06);
+  --ifm-alert-border-color: #27AE60;
+}
+
+/* Footer */
+.footer {
+  background-color: #1F1F22;
+}
+
+.footer__title {
+  font-family: 'PFDin', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer__link-item {
+  font-size: 0.875rem;
+  color: #AFAFBC;
+  transition: color 0.3s;
+}
+
+.footer__link-item:hover {
+  color: #FF423E;
+}
+
+.footer__copyright {
+  font-family: 'Bulo', sans-serif;
+  font-size: 0.8rem;
+  color: #7E7E87;
+}
+
+/* Table of contents */
+.table-of-contents__link {
+  font-size: 0.85rem;
+  color: #4E4E5E;
+}
+
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: #FF423E;
+}
+
+/* Search */
+.DocSearch-Button {
+  border-radius: 2px;
+}
+
+/* Breadcrumbs */
+.breadcrumbs__link {
+  color: #FF423E;
+}
+
+.breadcrumbs__link:hover {
+  color: #B32D2A;
+}
+
+/* Tags */
+.tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #dadada;
+  color: #ffffff;
+  border-radius: 2px;
+  border: none;
+}
+
+.tag:hover {
+  background-color: #FF423E;
+}
+
+/* Cards for product categories */
+.card {
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  border: none;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Pagination */
+.pagination-nav__link {
+  border-radius: 2px;
+  border-color: #E5E6E8;
+  transition: all 0.3s;
+}
+
+.pagination-nav__link:hover {
+  border-color: #FF423E;
+}
+
+.pagination-nav__sublabel {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

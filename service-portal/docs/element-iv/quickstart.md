@@ -1,0 +1,40 @@
+# Quickstart
+
+Get your Element IV up and running in just a few minutes.
+
+## What's in the Box
+
+- Element IV DAC/Amp
+- USB-C cable
+- Power adapter
+- Quick start card
+
+## Setup
+
+### 1. Connect Power
+
+Plug the power adapter into Element IV and connect to a wall outlet.
+
+### 2. Connect to Your Computer
+
+Use the included USB-C cable to connect Element IV to your computer.
+
+### 3. Connect Headphones
+
+Plug your headphones into the front 6.35mm (1/4") or 3.5mm jack.
+
+### 4. Set as Default Audio Device
+
+**Windows:** Right-click the speaker icon → Sound settings → Select "Element IV" as output device.
+
+**Mac:** System Preferences → Sound → Output → Select "Element IV".
+
+### 5. Adjust Volume
+
+Turn the knob to adjust volume. Press to switch between headphone and line output.
+
+## Next Steps
+
+- [Update firmware](/element-iv/firmware-update) to get the latest features
+- [Read the full manual](/element-iv/manuals) for detailed information
+- Visit [Core™](https://core.jdslabs.com) to customize EQ settings
