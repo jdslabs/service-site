@@ -4,7 +4,8 @@ Select your language's manual below to view
 
 ## Downloads
 
-- [Atom Amp+ User Manual (PDF)](/manuals/atom-amp-plus/atom-amp-plus_instructions_en.pdf) — Full product manual
+- [Atom Amp+ User Manual EN (PDF)](/manuals/atom-amp-plus/atom-amp-plus_instructions_en.pdf)
+- [Atom Amp+ User Manual DE (PDF)](/manuals/atom-amp-plus/atom-amp-plus_instructions_de.pdf)
 
 ## Warranty
 
