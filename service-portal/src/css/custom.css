@@ -319,6 +319,79 @@ pre code {
   text-transform: uppercase;
 }
 
+/* Hide left sidebar on docs pages */
+.theme-doc-sidebar-container,
+aside.theme-doc-sidebar-container,
+[class*="docSidebarContainer"] {
+  display: none !important;
+}
+
+/* Doc page layout */
+@media (min-width: 997px) {
+  /* Remove all container constraints */
+  [class*="docPage"],
+  [class*="docMainContainer"],
+  [class*="docItemContainer"],
+  .container,
+  .row,
+  main {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Main content column - expand to fill space, shift right for TOC on left */
+  .col:not(.col--3),
+  .col--9,
+  [class*="docItemCol"] {
+    max-width: calc(100% - 220px) !important;
+    width: calc(100% - 220px) !important;
+    flex: none !important;
+    margin: 0 !important;
+    margin-left: 220px !important;
+    padding: 0 160px 0 60px !important;
+  }
+  
+  /* Article and markdown content - full width within column */
+  article,
+  .markdown,
+  .theme-doc-markdown {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 2rem !important;
+    margin: 0 !important;
+  }
+  
+  /* Move TOC to the left */
+  .col--3 {
+    position: fixed !important;
+    left: 1rem !important;
+    top: 80px !important;
+    width: 200px !important;
+    max-height: calc(100vh - 100px) !important;
+    overflow-y: auto !important;
+    padding: 0 !important;
+  }
+  
+  .table-of-contents {
+    padding-left: 0 !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 996px) {
+  .col--3 {
+    position: static !important;
+    width: 100% !important;
+  }
+  
+  article {
+    padding: 0 1rem !important;
+    width: 100% !important;
+  }
+}
+
 /* ================================
    Repair Guide Steps (iFixit-style)
    ================================ */

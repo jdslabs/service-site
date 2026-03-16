@@ -1,5 +1,7 @@
 # Firmware Update
 
+## Overview
+
 Update your Element IV firmware using the Core™ web app.
 
 **Difficulty:** Easy  
@@ -8,12 +10,11 @@ Update your Element IV firmware using the Core™ web app.
 
 ---
 
+## Step 1: Connect Element IV
+
 <div class="repair-step">
+  <div class="repair-step-media"></div>
   <div class="repair-step-content">
-    <div class="repair-step-header">
-      <span class="repair-step-number">1</span>
-      <h3 class="repair-step-title">Connect Element IV</h3>
-    </div>
     <ul>
       <li>Connect Element IV to your computer via USB-C</li>
       <li>Ensure the device is powered on</li>
@@ -22,12 +23,11 @@ Update your Element IV firmware using the Core™ web app.
   </div>
 </div>
 
+## Step 2: Open Core™
+
 <div class="repair-step">
+  <div class="repair-step-media"></div>
   <div class="repair-step-content">
-    <div class="repair-step-header">
-      <span class="repair-step-number">2</span>
-      <h3 class="repair-step-title">Open Core™</h3>
-    </div>
     <ul>
       <li>Open <strong>Chrome</strong> or <strong>Edge</strong> browser</li>
       <li>Navigate to <a href="https://core.jdslabs.com" target="_blank">core.jdslabs.com</a></li>
@@ -38,15 +38,13 @@ Update your Element IV firmware using the Core™ web app.
   </div>
 </div>
 
+## Step 3: Connect Device
+
 <div class="repair-step">
   <div class="repair-step-media">
     <img src="/img/element-iv/el4-update-4.png" alt="Connect device in Core" />
   </div>
   <div class="repair-step-content">
-    <div class="repair-step-header">
-      <span class="repair-step-number">3</span>
-      <h3 class="repair-step-title">Connect Device</h3>
-    </div>
     <ul>
       <li>Click <strong>Connect Device</strong> in Core™</li>
       <li>Select "Element IV" from the browser's device list</li>
@@ -55,15 +53,13 @@ Update your Element IV firmware using the Core™ web app.
   </div>
 </div>
 
+## Step 4: Check for Updates
+
 <div class="repair-step">
   <div class="repair-step-media">
     <img src="/img/element-iv/el4-update-1.png" alt="Check for updates" />
   </div>
   <div class="repair-step-content">
-    <div class="repair-step-header">
-      <span class="repair-step-number">4</span>
-      <h3 class="repair-step-title">Check for Updates</h3>
-    </div>
     <ul>
       <li>Navigate to <strong>Settings → Firmware</strong></li>
       <li>Core™ will display your current firmware version</li>
@@ -72,15 +68,13 @@ Update your Element IV firmware using the Core™ web app.
   </div>
 </div>
 
+## Step 5: Install Update
+
 <div class="repair-step">
   <div class="repair-step-media">
     <img src="/img/element-iv/el4-update-2.png" alt="Install firmware update" />
   </div>
   <div class="repair-step-content">
-    <div class="repair-step-header">
-      <span class="repair-step-number">5</span>
-      <h3 class="repair-step-title">Install Update</h3>
-    </div>
     <ul>
       <li>Click <strong>Update Firmware</strong></li>
       <li>Wait for the update to complete (1-2 minutes)</li>
@@ -92,15 +86,13 @@ Update your Element IV firmware using the Core™ web app.
   </div>
 </div>
 
+## Step 6: Verify
+
 <div class="repair-step">
   <div class="repair-step-media">
     <img src="/img/element-iv/el4-update-5.png" alt="Verify update" />
   </div>
   <div class="repair-step-content">
-    <div class="repair-step-header">
-      <span class="repair-step-number">6</span>
-      <h3 class="repair-step-title">Verify</h3>
-    </div>
     <ul>
       <li>After restart, reconnect to Core™</li>
       <li>Go to <strong>Settings → Firmware</strong> to confirm the new version</li>
