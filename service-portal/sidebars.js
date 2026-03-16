@@ -8,6 +8,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Element IV',
+      link: {
+        type: 'doc',
+        id: 'element-iv/index',
+      },
       items: [
         'element-iv/quickstart',
         'element-iv/manuals',
@@ -18,6 +22,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Atom DAC 2',
+      link: {
+        type: 'doc',
+        id: 'atom-dac-2/index',
+      },
       items: [
         'atom-dac-2/quickstart',
         'atom-dac-2/manuals',
@@ -27,6 +35,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Atom Amp 2',
+      link: {
+        type: 'doc',
+        id: 'atom-amp-2/index',
+      },
       items: [
         'atom-amp-2/quickstart',
         'atom-amp-2/manuals',
@@ -36,6 +48,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Atom Amp+',
+      link: {
+        type: 'doc',
+        id: 'atom-amp-plus/index',
+      },
       items: [
         'atom-amp-plus/quickstart',
         'atom-amp-plus/manuals',
@@ -45,6 +61,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Atom Phono',
+      link: {
+        type: 'doc',
+        id: 'atom-phono/index',
+      },
       items: [
         'atom-phono/quickstart',
         'atom-phono/manuals',
@@ -54,6 +74,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Synapse',
+      link: {
+        type: 'doc',
+        id: 'synapse/index',
+      },
       items: [
         'synapse/quickstart',
         'synapse/manuals',
