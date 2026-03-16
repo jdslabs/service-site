@@ -1,60 +1,136 @@
 # Firmware Update
 
-Keep your Element IV up to date with the latest features and improvements.
+Update your Element IV firmware using the Core™ web app.
 
-## Before You Begin
+**Difficulty:** Easy  
+**Time:** 10 minutes  
+**Tools:** USB-C cable, Chrome or Edge browser
 
-- Element IV must be connected to your computer via USB
-- Ensure a stable internet connection
-- Do not disconnect power during the update
+---
 
-## Update via Core™
+<div class="repair-step">
+  <div class="repair-step-media">
+    <img src="./img/placeholder.jpg" alt="Connect Element IV" />
+  </div>
+  <div class="repair-step-content">
+    <div class="repair-step-header">
+      <span class="repair-step-number">1</span>
+      <h3 class="repair-step-title">Connect Element IV</h3>
+    </div>
+    <ul>
+      <li>Connect Element IV to your computer via USB-C</li>
+      <li>Ensure the device is powered on</li>
+      <li>Wait a few seconds for your computer to recognize it</li>
+    </ul>
+  </div>
+</div>
 
-The easiest way to update firmware is through the Core™ web or desktop apps.  Updates are not supported via the Android or iOS Core apps.
+<div class="repair-step">
+  <div class="repair-step-media">
+    <img src="./img/placeholder.jpg" alt="Open Core web app" />
+  </div>
+  <div class="repair-step-content">
+    <div class="repair-step-header">
+      <span class="repair-step-number">2</span>
+      <h3 class="repair-step-title">Open Core™</h3>
+    </div>
+    <ul>
+      <li>Open <strong>Chrome</strong> or <strong>Edge</strong> browser</li>
+      <li>Navigate to <a href="https://core.jdslabs.com" target="_blank">core.jdslabs.com</a></li>
+    </ul>
+    <div class="repair-info">
+      Core™ requires a Chromium-based browser (Chrome, Edge, Brave) for USB connectivity. Safari and Firefox are not supported.
+    </div>
+  </div>
+</div>
 
-### Step 1: Open Core™
+<div class="repair-step">
+  <div class="repair-step-media">
+    <img src="./img/placeholder.jpg" alt="Connect device in Core" />
+  </div>
+  <div class="repair-step-content">
+    <div class="repair-step-header">
+      <span class="repair-step-number">3</span>
+      <h3 class="repair-step-title">Connect Device</h3>
+    </div>
+    <ul>
+      <li>Click <strong>Connect Device</strong> in Core™</li>
+      <li>Select "Element IV" from the browser's device list</li>
+      <li>Click <strong>Connect</strong></li>
+    </ul>
+  </div>
+</div>
 
-Visit [core.jdslabs.com](https://core.jdslabs.com) in Chrome or launch the Core app for Mac, Windows, or Linux.
+<div class="repair-step">
+  <div class="repair-step-media">
+    <img src="./img/placeholder.jpg" alt="Check for updates" />
+  </div>
+  <div class="repair-step-content">
+    <div class="repair-step-header">
+      <span class="repair-step-number">4</span>
+      <h3 class="repair-step-title">Check for Updates</h3>
+    </div>
+    <ul>
+      <li>Navigate to <strong>Settings → Firmware</strong></li>
+      <li>Core™ will display your current firmware version</li>
+      <li>If an update is available, you'll see an <strong>Update</strong> button</li>
+    </ul>
+  </div>
+</div>
 
-:::info Browser Compatibility
-Core™ requires a Chromium-based browser (Chrome, Edge, Brave) for USB connectivity.
-:::
+<div class="repair-step">
+  <div class="repair-step-media">
+    <img src="./img/placeholder.jpg" alt="Install firmware update" />
+  </div>
+  <div class="repair-step-content">
+    <div class="repair-step-header">
+      <span class="repair-step-number">5</span>
+      <h3 class="repair-step-title">Install Update</h3>
+    </div>
+    <ul>
+      <li>Click <strong>Update Firmware</strong></li>
+      <li>Wait for the update to complete (1-2 minutes)</li>
+      <li>Element IV will restart automatically when finished</li>
+    </ul>
+    <div class="repair-warning">
+      Do not disconnect USB or power during the update. Interrupting the process may require recovery steps.
+    </div>
+  </div>
+</div>
 
-### Step 2: Connect Your Device
+<div class="repair-step">
+  <div class="repair-step-media">
+    <img src="./img/placeholder.jpg" alt="Verify update" />
+  </div>
+  <div class="repair-step-content">
+    <div class="repair-step-header">
+      <span class="repair-step-number">6</span>
+      <h3 class="repair-step-title">Verify</h3>
+    </div>
+    <ul>
+      <li>After restart, reconnect to Core™</li>
+      <li>Go to <strong>Settings → Firmware</strong> to confirm the new version</li>
+      <li>Test basic functions (volume, output toggle, EQ)</li>
+    </ul>
+  </div>
+</div>
 
-1. Click **Connect Device**
-2. Select "Element IV" from the device list
-3. Click **Connect**
-
-### Step 3: Check for Updates
-
-1. Navigate to **Settings** → **Firmware**
-2. Core™ will display your current version and check for updates
-3. If an update is available, click **Update Firmware**
-
-### Step 4: Wait for Completion
-
-- The update typically takes 1-2 minutes
-- Follow prompts given during the process
-- Element IV will restart automatically when complete
-- Do not disconnect USB or power during the update
+---
 
 ## Troubleshooting
 
-### Device Not Detected
-
+**Device not detected?**
 - Try a different USB cable
 - Connect directly to your computer (not through a hub)
-- Restart your browser
+- Restart your browser and try again
 
-### Update Failed
-
-1. Power cycle Element IV
+**Update failed?**
+1. Power cycle Element IV (unplug power, wait 10 seconds, reconnect)
 2. Reconnect USB
 3. Try the update again
 
-If problems persist, contact [support](https://jdslabs.com/support).
+If problems persist, contact [JDS Labs Support](https://jdslabs.com/support).
 
 ## Release Notes
 
-Visit the [JDS Labs blog](https://blog.jdslabs.com) for detailed firmware release notes.
+Visit the [JDS Labs Blog](https://blog.jdslabs.com) for detailed firmware release notes.

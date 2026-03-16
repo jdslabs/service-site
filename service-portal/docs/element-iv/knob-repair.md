@@ -10,7 +10,7 @@ Replace or repair the Element IV volume knob.
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/guides/placeholder-step.jpg" alt="Power off the device" />
+    <img src="./img/placeholder.jpg" alt="Power off the device" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
@@ -27,7 +27,7 @@ Replace or repair the Element IV volume knob.
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/guides/placeholder-step.jpg" alt="Locate the set screw" />
+    <img src="./img/placeholder.jpg" alt="Locate the set screw" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
@@ -47,7 +47,7 @@ Replace or repair the Element IV volume knob.
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/guides/placeholder-step.jpg" alt="Loosen the set screw" />
+    <img src="./img/placeholder.jpg" alt="Loosen the set screw" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
@@ -67,7 +67,7 @@ Replace or repair the Element IV volume knob.
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/guides/placeholder-step.jpg" alt="Remove the knob" />
+    <img src="./img/placeholder.jpg" alt="Remove the knob" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
@@ -84,7 +84,7 @@ Replace or repair the Element IV volume knob.
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/guides/placeholder-step.jpg" alt="Install replacement knob" />
+    <img src="./img/placeholder.jpg" alt="Install replacement knob" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
@@ -102,7 +102,7 @@ Replace or repair the Element IV volume knob.
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/guides/placeholder-step.jpg" alt="Test the repair" />
+    <img src="./img/placeholder.jpg" alt="Test the repair" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">

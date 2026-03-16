@@ -10,7 +10,7 @@
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/guides/your-image.jpg" alt="Step description" />
+    <img src="./img/your-image.jpg" alt="Step description" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
@@ -27,7 +27,7 @@
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/guides/your-image.jpg" alt="Step description" />
+    <img src="./img/your-image.jpg" alt="Step description" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
@@ -47,7 +47,7 @@
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/guides/your-image.jpg" alt="Step description" />
+    <img src="./img/your-image.jpg" alt="Step description" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
@@ -82,14 +82,15 @@ TEMPLATE REFERENCE
 =====================================
 
 IMAGES:
-- Place images in: static/img/guides/
-- Reference as: /img/guides/filename.jpg
+- Place images in: docs/[product-slug]/img/
+- Example: docs/element-iv/img/knob-step1.jpg
+- Reference as: ./img/knob-step1.jpg (relative path)
 - Recommended size: 800x600px or similar 4:3 ratio
 
 MULTIPLE IMAGES PER STEP:
 <div class="repair-step-media">
-  <img src="/img/guides/image1.jpg" alt="Description" />
-  <img src="/img/guides/image2.jpg" alt="Description" />
+  <img src="./img/image1.jpg" alt="Description" />
+  <img src="./img/image2.jpg" alt="Description" />
 </div>
 
 YOUTUBE VIDEO:
