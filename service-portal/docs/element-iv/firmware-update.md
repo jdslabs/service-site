@@ -9,9 +9,6 @@ Update your Element IV firmware using the Core™ web app.
 ---
 
 <div class="repair-step">
-  <div class="repair-step-media">
-    <img src="/img/element-iv/placeholder.jpg" alt="Connect Element IV" />
-  </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">1</span>
@@ -26,9 +23,6 @@ Update your Element IV firmware using the Core™ web app.
 </div>
 
 <div class="repair-step">
-  <div class="repair-step-media">
-    <img src="/img/element-iv/placeholder.jpg" alt="Open Core web app" />
-  </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">2</span>
