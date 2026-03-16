@@ -46,7 +46,7 @@ Update your Element IV firmware using the Core™ web app.
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="./img/placeholder.jpg" alt="Connect device in Core" />
+    <img src="service-portal/docs/element-iv/img/el4-update-4.png" alt="Connect device in Core" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
@@ -63,7 +63,7 @@ Update your Element IV firmware using the Core™ web app.
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="./img/placeholder.jpg" alt="Check for updates" />
+    <img src="service-portal/docs/element-iv/img/el4-update-1.png" alt="Check for updates" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
@@ -80,7 +80,7 @@ Update your Element IV firmware using the Core™ web app.
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="./img/placeholder.jpg" alt="Install firmware update" />
+    <img src="service-portal/docs/element-iv/img/el4-update-2.png" alt="Install firmware update" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
