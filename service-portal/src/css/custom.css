@@ -417,6 +417,75 @@ aside.theme-doc-sidebar-container,
   width: 100%;
   border-radius: 4px;
   border: 1px solid #E5E6E8;
+  cursor: zoom-in;
+  transition: opacity 0.2s;
+}
+
+.repair-step-media img:hover {
+  opacity: 0.9;
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.lightbox-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Black bar to cover navbar when lightbox is active */
+.lightbox-overlay::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background: #000000;
+  z-index: 10001;
+}
+
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: calc(90vh - 60px);
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 0;
+  right: 1.5rem;
+  height: 60px;
+  color: #ffffff;
+  font-size: 1.75rem;
+  cursor: pointer;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10002;
+  transition: opacity 0.2s;
+}
+
+.lightbox-close:hover {
+  opacity: 0.7;
 }
 
 .repair-step-media video {

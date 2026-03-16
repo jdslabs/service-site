@@ -18,6 +18,10 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  clientModules: [
+    require.resolve('./src/theme/lightbox.js'),
+  ],
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
