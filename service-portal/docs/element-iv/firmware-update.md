@@ -10,11 +10,11 @@ Keep your Element IV up to date with the latest features and improvements.
 
 ## Update via Core™
 
-The easiest way to update firmware is through the Core™ web app.
+The easiest way to update firmware is through the Core™ web or desktop apps.  Updates are not supported via the Android or iOS Core apps.
 
 ### Step 1: Open Core™
 
-Visit [core.jdslabs.com](https://core.jdslabs.com) in Chrome or Edge.
+Visit [core.jdslabs.com](https://core.jdslabs.com) in Chrome or launch the Core app for Mac, Windows, or Linux.
 
 :::info Browser Compatibility
 Core™ requires a Chromium-based browser (Chrome, Edge, Brave) for USB connectivity.
@@ -35,6 +35,7 @@ Core™ requires a Chromium-based browser (Chrome, Edge, Brave) for USB connecti
 ### Step 4: Wait for Completion
 
 - The update typically takes 1-2 minutes
+- Follow prompts given during the process
 - Element IV will restart automatically when complete
 - Do not disconnect USB or power during the update
 
