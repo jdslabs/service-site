@@ -33,6 +33,22 @@ Plug your headphones into the front 6.35mm (1/4") or 3.5mm jack.
 
 Turn the knob to adjust volume. Press to switch between headphone and line output.
 
+## Controls
+
+### Volume Knob
+
+- **Rotate:** Adjust volume
+- **Press:** Toggle between headphone and line output
+- **Long Press:** Access menu
+
+### Menu Navigation
+
+1. Long press the knob to enter the menu
+2. Rotate to navigate options
+3. Press to select
+4. Long press to exit
+
+
 ## Next Steps
 
 - [Update firmware](/element-iv/firmware-update) to get the latest features
