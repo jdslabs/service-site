@@ -100,7 +100,7 @@ Update your Element IV firmware using the Core™ web app.
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/element-iv/placeholder.jpg" alt="Verify update" />
+    <img src="/img/element-iv/el4-update-5.png" alt="Verify update" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
