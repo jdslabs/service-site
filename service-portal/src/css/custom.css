@@ -318,3 +318,132 @@ pre code {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
+/* ================================
+   Repair Guide Steps (iFixit-style)
+   ================================ */
+
+.repair-step {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.repair-step-media {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.repair-step-media img {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #E5E6E8;
+}
+
+.repair-step-media video {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #E5E6E8;
+}
+
+.repair-step-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.repair-step-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.repair-step-number {
+  font-family: 'PFDin', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #ffffff;
+  background: #FF423E;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.repair-step-title {
+  font-family: 'PFDin', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1D1D28;
+  margin: 0;
+}
+
+.repair-step-content ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.repair-step-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.repair-step-content li:last-child {
+  margin-bottom: 0;
+}
+
+/* Markers for callouts in images */
+.repair-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: #FF423E;
+  color: #ffffff;
+  font-family: 'PFDin', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  border-radius: 50%;
+  margin-right: 0.25rem;
+}
+
+.marker-red { background: #FF423E; }
+.marker-orange { background: #F5A623; }
+.marker-yellow { background: #F8E71C; color: #1D1D28; }
+
+/* Warning/info boxes in steps */
+.repair-warning {
+  background: #FFF3CD;
+  border-left: 4px solid #F5A623;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.9rem;
+}
+
+.repair-info {
+  background: #E8F4FD;
+  border-left: 4px solid #4A90D9;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+  .repair-step {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
