@@ -19,7 +19,7 @@ const guides = [
     slug: '/element-iv/firmware-update',
     description: 'How to update Element IV firmware using the Core™ app.',
     difficulty: 'Easy' as const,
-    time: '10 min',
+    time: '2 min',
     icon: '⬆️',
   },
   {
