@@ -6,16 +6,12 @@ const guides = [
     title: 'Quickstart',
     slug: '/element-iv/quickstart',
     description: 'Get up and running with your Element IV in minutes.',
-    difficulty: 'Easy' as const,
-    time: '5 min',
     icon: '🚀',
   },
   {
     title: 'Manuals',
     slug: '/element-iv/manuals',
     description: 'Complete user manual and reference documentation.',
-    difficulty: 'Easy' as const,
-    time: '15 min',
     icon: '📖',
   },
   {

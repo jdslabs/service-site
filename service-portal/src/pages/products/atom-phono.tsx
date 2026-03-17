@@ -6,16 +6,12 @@ const guides = [
     title: 'Quickstart',
     slug: '/atom-phono/quickstart',
     description: 'Get up and running with your Atom Phono.',
-    difficulty: 'Easy' as const,
-    time: '5 min',
     icon: '🚀',
   },
   {
     title: 'Manuals',
     slug: '/atom-phono/manuals',
     description: 'Complete specifications and reference documentation.',
-    difficulty: 'Easy' as const,
-    time: '10 min',
     icon: '📖',
   },
   {

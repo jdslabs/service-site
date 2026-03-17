@@ -6,16 +6,12 @@ const guides = [
     title: 'Quickstart',
     slug: '/atom-amp-plus/quickstart',
     description: 'Get up and running with your Atom Amp+.',
-    difficulty: 'Easy' as const,
-    time: '5 min',
     icon: '🚀',
   },
   {
     title: 'Manuals',
     slug: '/atom-amp-plus/manuals',
     description: 'Complete specifications and reference documentation.',
-    difficulty: 'Easy' as const,
-    time: '10 min',
     icon: '📖',
   },
   {

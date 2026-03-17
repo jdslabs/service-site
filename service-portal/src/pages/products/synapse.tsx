@@ -6,16 +6,12 @@ const guides = [
     title: 'Quickstart',
     slug: '/synapse/quickstart',
     description: 'Get up and running with your Synapse.',
-    difficulty: 'Easy' as const,
-    time: '5 min',
     icon: '🚀',
   },
   {
     title: 'Manuals',
     slug: '/synapse/manuals',
     description: 'Complete specifications and reference documentation.',
-    difficulty: 'Easy' as const,
-    time: '10 min',
     icon: '📖',
   },
   {
