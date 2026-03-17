@@ -50,7 +50,7 @@ const config = {
     ({
       image: 'img/jdslabs-social-card.jpg',
       navbar: {
-        title: 'JDS Labs',
+        title: 'JDS LABS',
         logo: {
           alt: 'JDS Labs Logo',
           src: 'img/logo.svg',

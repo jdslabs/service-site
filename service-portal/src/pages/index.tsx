@@ -96,7 +96,6 @@ export default function Home(): JSX.Element {
     >
       <header className={styles.hero}>
         <div className={styles.heroContent}>
-          <span className={styles.heroEyebrow}>service.jdslabs.com</span>
           <h1 className={styles.heroTitle}>Service & Repair Guides</h1>
           <p className={styles.heroSubtitle}>
             Step-by-step manuals and video walkthroughs for JDS Labs products.

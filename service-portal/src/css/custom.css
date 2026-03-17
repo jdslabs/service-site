@@ -83,18 +83,24 @@
   height: 56px;
 }
 
+.navbar__logo {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+}
+
 .navbar__title {
   font-family: 'PFDin', sans-serif;
   font-weight: 700;
-  font-size: 1.1rem;
-  letter-spacing: 0.05em;
+  font-size: 1.65rem;
+  letter-spacing: 0.12em;
   color: #ffffff;
 }
 
 .navbar__link {
   font-family: 'Bulo', sans-serif;
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.02em;
   color: #f5f7fa;
   transition: color 0.3s;
@@ -107,6 +113,13 @@
 
 .navbar__item {
   padding: 0 1rem;
+}
+
+/* Hide external link icons in navbar */
+.navbar__link svg[class*="iconExternalLink"],
+.navbar__link .external-link-icon,
+a[class*="navbar__link"] svg {
+  display: none;
 }
 
 /* Sidebar styling */
