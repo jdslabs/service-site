@@ -76,11 +76,6 @@ export default function ProductPage({ name, description, image, guides }: Produc
 
       <main className={styles.main}>
         <div className={styles.container}>
-          <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Guides</h2>
-            <span className={styles.sectionSubtitle}>{guides.length} available</span>
-          </div>
-          
           <div className={styles.guideGrid}>
             {guides.map((guide) => (
               <GuideCard key={guide.slug} guide={guide} />

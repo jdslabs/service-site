@@ -223,24 +223,6 @@ pre code {
   background-color: #1F1F22;
 }
 
-.footer__title {
-  font-family: 'PFDin', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-}
-
-.footer__link-item {
-  font-size: 0.875rem;
-  color: #AFAFBC;
-  transition: color 0.3s;
-}
-
-.footer__link-item:hover {
-  color: #FF423E;
-}
-
 .footer__copyright {
   font-family: 'Bulo', sans-serif;
   font-size: 0.8rem;

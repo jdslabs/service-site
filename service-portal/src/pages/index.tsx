@@ -7,85 +7,84 @@ const products = [
   {
     name: 'Element IV',
     slug: '/products/element-iv',
+    docsSlug: '/element-iv',
     description: 'Flagship DAC/Amp with Core™',
-    guideCount: 4,
-    videoCount: 0,
-    tags: ['DAC', 'Amp', 'DSP'],
+    guideCount: 2,
     image: 'https://jdslabs.com/media/cache/43/02/4302a7fb34a39c935136a30b000048ca.jpg',
   },
   {
     name: 'Atom DAC 2',
     slug: '/products/atom-dac-2',
+    docsSlug: '/atom-dac-2',
     description: 'High-performance USB DAC',
-    guideCount: 3,
-    videoCount: 0,
-    tags: ['DAC', 'USB'],
+    guideCount: 1,
     image: '/img/products/atom-dac-2.jpg',
   },
   {
     name: 'Atom Amp 2',
     slug: '/products/atom-amp-2',
+    docsSlug: '/atom-amp-2',
     description: 'Desktop headphone amplifier',
-    guideCount: 3,
-    videoCount: 0,
-    tags: ['Amp', 'Headphone'],
+    guideCount: 1,
     image: '/img/products/atom-amp-2.jpg',
   },
   {
     name: 'Atom Amp+',
     slug: '/products/atom-amp-plus',
+    docsSlug: '/atom-amp-plus',
     description: 'Desktop headphone amplifier',
-    guideCount: 3,
-    videoCount: 0,
-    tags: ['Amp', 'Headphone'],
+    guideCount: 1,
     image: '/img/products/atom-amp-plus.jpg',
   },
   {
     name: 'Atom Phono',
     slug: '/products/atom-phono',
+    docsSlug: '/atom-phono',
     description: 'Phono preamp & tone control',
-    guideCount: 3,
-    videoCount: 0,
-    tags: ['Phono', 'Preamp'],
+    guideCount: 1,
     image: '/img/products/atom-phono.jpg',
   },
   {
     name: 'Synapse / Synapse Max',
     slug: '/products/synapse',
+    docsSlug: '/synapse',
     description: 'USB isolators',
-    guideCount: 3,
-    videoCount: 0,
-    tags: ['USB', 'Isolator'],
+    guideCount: 1,
     image: '/img/products/synapse.jpg',
   },
 ];
 
 function ProductCard({ product }) {
   return (
-    <Link to={product.slug} className={styles.productCard}>
-      <div className={styles.productImage}>
-        <img 
-          src={product.image} 
-          alt={product.name}
-          onError={(e) => {
-            e.currentTarget.style.display = 'none';
-            e.currentTarget.parentElement.innerHTML = '📦';
-          }}
-        />
-      </div>
-      <div className={styles.productInfo}>
-        <h3 className={styles.productName}>{product.name}</h3>
-        <p className={styles.productDescription}>{product.description}</p>
-        <div className={styles.productMeta}>
-          {product.guideCount} guides · {product.videoCount} videos
+    <div className={styles.productCard}>
+      <Link to={product.slug} className={styles.productCardLink}>
+        <div className={styles.productImage}>
+          <img 
+            src={product.image} 
+            alt={product.name}
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              e.currentTarget.parentElement.innerHTML = '📦';
+            }}
+          />
         </div>
-        <div className={styles.productTags}>
-          {product.tags.map((tag) => (
-            <span key={tag} className={styles.tag}>{tag}</span>
-          ))}
+        <div className={styles.productInfo}>
+          <h3 className={styles.productName}>{product.name}</h3>
+          <p className={styles.productDescription}>{product.description}</p>
+          <div className={styles.productMeta}>
+            {product.guideCount} {product.guideCount === 1 ? 'guide' : 'guides'}
+          </div>
         </div>
+      </Link>
+      <div className={styles.productActions}>
+        <Link to={`${product.docsSlug}/quickstart`} className={styles.actionButton}>
+          Quickstart
+        </Link>
+        <Link to={`${product.docsSlug}/manuals`} className={styles.actionButton}>
+          Manuals
+        </Link>
       </div>
-    </Link>
+    </div>
   );
 }
 
@@ -107,11 +106,6 @@ export default function Home(): JSX.Element {
 
       <main className={styles.main}>
         <div className={styles.container}>
-          <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Products</h2>
-            <span className={styles.sectionSubtitle}>Select a product to browse guides</span>
-          </div>
-          
           <div className={styles.productGrid}>
             {products.map((product) => (
               <ProductCard key={product.slug} product={product} />

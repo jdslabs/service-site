@@ -75,32 +75,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Products',
-            items: [
-              { label: 'Element IV', to: '/element-iv' },
-              { label: 'Atom Stack', to: '/atom-stack' },
-              { label: 'Subjective 3', to: '/subjective-3' },
-            ],
-          },
-          {
-            title: 'Resources',
-            items: [
-              { label: 'JDS Labs Shop', href: 'https://jdslabs.com' },
-              { label: 'Blog', href: 'https://blog.jdslabs.com' },
-              { label: 'Support', href: 'https://jdslabs.com/support' },
-            ],
-          },
-          {
-            title: 'Connect',
-            items: [
-              { label: 'Twitter', href: 'https://twitter.com/jaborandi' },
-              { label: 'Facebook', href: 'https://facebook.com/jdslabs' },
-              { label: 'Instagram', href: 'https://instagram.com/jdslabs' },
-            ],
-          },
-        ],
+        links: [],
         copyright: `© ${new Date().getFullYear()} JDS Labs, Inc.`,
       },
       prism: {
