@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'JDS Labs Service Portal',
   tagline: 'Service & Repair Guides',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   url: 'https://service.jdslabs.com',
   baseUrl: '/',
