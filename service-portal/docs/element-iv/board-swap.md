@@ -6,8 +6,8 @@ sidebar_label: Board Swap
 
 Replace the main board in your Element IV.
 
-**Difficulty:** Moderate  
-**Time:** 10 minutes  
+**Difficulty:** Advanced  
+**Time:** 15 minutes  
 **Tools:** Phillips head screwdriver
 
 ## Video Guide
