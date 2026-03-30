@@ -85,8 +85,9 @@ Replace the main board in your Element IV.
       <h3 class="repair-step-title">Gently Lift Board from Case</h3>
     </div>
     <ul>
-      <li>Carefully lift the board out of the enclosure</li>
+      <li>Using the notch near the headphone jack, lift the board out of the enclosure by tilting the board and pulling forward</li>
       <li>Collect the aluminum button and gasket from the rear of the device upon removal</li>
+      <li>Avoid excessive strain on the screen's cable</li>
     </ul>
   </div>
 </div>
