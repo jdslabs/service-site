@@ -17,6 +17,7 @@ const sidebars = {
         'element-iv/manuals',
         'element-iv/firmware-update',
         'element-iv/knob-repair',
+        'element-iv/board-swap',
       ],
     },
     {

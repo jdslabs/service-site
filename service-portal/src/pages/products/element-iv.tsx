@@ -30,6 +30,15 @@ const guides = [
     time: '20 min',
     icon: '🔧',
   },
+  {
+    title: 'Board Swap',
+    slug: '/element-iv/board-swap',
+    description: 'Replace the main board in your Element IV.',
+    difficulty: 'Advanced' as const,
+    time: '30 min',
+    icon: '🔌',
+    hasVideo: true,
+  },
 ];
 
 export default function ElementIV() {
