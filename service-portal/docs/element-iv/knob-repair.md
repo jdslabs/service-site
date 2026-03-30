@@ -4,116 +4,183 @@ Replace or repair the Element IV volume knob.
 
 **Difficulty:** Moderate  
 **Time:** 20 minutes  
-**Tools:** 1.5mm hex key (Allen wrench)
+**Tools:** Phillips head screwdriver, C-clip pliers
+
+## Video Guide
+
+<iframe 
+  width="480" 
+  height="400" 
+  src="https://www.youtube.com/embed/QHGTTZkaJgM" 
+  frameBorder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowFullScreen>
+</iframe>
 
 ---
 
 <div class="repair-step">
-  <div class="repair-step-media">
-    <img src="/img/element-iv/placeholder.jpg" alt="Power off the device" />
-  </div>
+  <div class="repair-step-media"></div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">1</span>
-      <h3 class="repair-step-title">Power Off</h3>
+      <h3 class="repair-step-title">Disconnect Power</h3>
     </div>
     <ul>
-      <li>Disconnect the power adapter from Element IV</li>
-      <li>Unplug all cables (USB, RCA, headphones)</li>
-      <li>Place the unit on a soft surface to prevent scratches</li>
+      <li>Unplug the power cable from your Element IV</li>
+      <li>Disconnect any audio cables (USB, RCA, headphones)</li>
     </ul>
+    <div class="repair-warning">
+      Always disconnect power before opening the enclosure to avoid electrical shock or damage.
+    </div>
   </div>
 </div>
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/element-iv/placeholder.jpg" alt="Locate the set screw" />
+    <img src="/img/element-iv/el4-knob-1.JPG" alt="Remove enclosure screws" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">2</span>
-      <h3 class="repair-step-title">Locate the Set Screw</h3>
+      <h3 class="repair-step-title">Remove the Enclosure Screws</h3>
     </div>
     <ul>
-      <li>Gently tilt Element IV to view the underside of the knob</li>
-      <li>Locate the small <span class="repair-marker">1</span> set screw hole</li>
-      <li>The screw requires a 1.5mm hex key</li>
+      <li>Use a blade or similar sharp tool to gently pry the rubber feet from the device</li>
+      <li>Remove the screws securing the top panel of the Element IV enclosure</li>
+      <li>Set the screws aside in a safe place to avoid losing them</li>
     </ul>
-    <div class="repair-info">
-      The set screw is recessed slightly. You may need good lighting to see it clearly.
-    </div>
   </div>
 </div>
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/element-iv/placeholder.jpg" alt="Loosen the set screw" />
+    <img src="/img/element-iv/el4-knob-2.JPG" alt="Remove center board screw" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">3</span>
-      <h3 class="repair-step-title">Loosen the Set Screw</h3>
+      <h3 class="repair-step-title">Remove Center Board Screw</h3>
     </div>
     <ul>
-      <li>Insert the 1.5mm hex key into the set screw</li>
-      <li>Turn <strong>counter-clockwise</strong> 2-3 full rotations</li>
-      <li>Do not fully remove the screw — just loosen it</li>
+      <li>Remove the center screw securing the board to the enclosure</li>
     </ul>
-    <div class="repair-warning">
-      Do not over-tighten or strip the set screw. Light pressure is sufficient.
+    <div class="repair-info">
+      Work on a clean, static-free surface to protect the electronics.
     </div>
   </div>
 </div>
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/element-iv/placeholder.jpg" alt="Remove the knob" />
+    <img src="/img/element-iv/el4-knob-3.JPG" alt="Gently lift board from case" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">4</span>
-      <h3 class="repair-step-title">Remove the Knob</h3>
+      <h3 class="repair-step-title">Gently Lift Board from Case</h3>
     </div>
     <ul>
-      <li>Gently pull the knob straight off the shaft</li>
-      <li>If stuck, wiggle slightly while pulling</li>
-      <li>Set the knob aside on a soft surface</li>
+      <li>Using the notch near the headphone jack, lift the board out of the enclosure by tilting the board and pulling forward</li>
+      <li>Collect the aluminum button and gasket from the rear of the device upon removal</li>
+      <li>Avoid excessive strain on the screen's cable</li>
     </ul>
   </div>
 </div>
 
 <div class="repair-step">
   <div class="repair-step-media">
-    <img src="/img/element-iv/placeholder.jpg" alt="Install replacement knob" />
+    <img src="/img/element-iv/el4-knob-4.JPG" alt="Disconnect internal cable" />
   </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">5</span>
-      <h3 class="repair-step-title">Install Replacement Knob</h3>
+      <h3 class="repair-step-title">Disconnect Internal Cable</h3>
     </div>
     <ul>
-      <li>Align the new knob with the shaft</li>
-      <li>Push firmly until fully seated</li>
-      <li>Rotate to align the set screw with the flat on the shaft</li>
-      <li>Tighten the set screw until snug</li>
+      <li>Carefully disconnect the screen's wire harness</li>
+      <li>Pull from the sides of the connector, not the cable itself</li>
+      <li>Note the cable's orientation for reassembly</li>
     </ul>
   </div>
 </div>
 
 <div class="repair-step">
-  <div class="repair-step-media">
-    <img src="/img/element-iv/placeholder.jpg" alt="Test the repair" />
-  </div>
+  <div class="repair-step-media"></div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">6</span>
-      <h3 class="repair-step-title">Test</h3>
+      <h3 class="repair-step-title">Use C-Clip Pliers to Remove Retaining Clip from Knob Shaft</h3>
     </div>
     <ul>
-      <li>Reconnect power</li>
-      <li>Verify smooth rotation through full range</li>
-      <li>Test press function (output toggle)</li>
-      <li>Test long-press function (menu access)</li>
+      <li>Using C-clip pliers, carefully remove the retaining clip from the knob shaft</li>
+      <li>Set the clip aside in a safe place</li>
+    </ul>
+  </div>
+</div>
+
+<div class="repair-step">
+  <div class="repair-step-media"></div>
+  <div class="repair-step-content">
+    <div class="repair-step-header">
+      <span class="repair-step-number">7</span>
+      <h3 class="repair-step-title">Remove Knob Assembly</h3>
+    </div>
+    <ul>
+      <li>Remove the knob assembly from the board</li>
+    </ul>
+  </div>
+</div>
+
+<div class="repair-step">
+  <div class="repair-step-media"></div>
+  <div class="repair-step-content">
+    <div class="repair-step-header">
+      <span class="repair-step-number">8</span>
+      <h3 class="repair-step-title">Using Pliers, Gently Grab the Flat Portion of the Knob Shaft and Rotate Clockwise to Tighten</h3>
+    </div>
+    <ul>
+      <li>Using pliers, gently grab the flat portion of the knob shaft</li>
+      <li>Rotate clockwise to tighten</li>
+    </ul>
+  </div>
+</div>
+
+<div class="repair-step">
+  <div class="repair-step-media"></div>
+  <div class="repair-step-content">
+    <div class="repair-step-header">
+      <span class="repair-step-number">9</span>
+      <h3 class="repair-step-title">Reinsert Knob Assembly into Case</h3>
+    </div>
+    <ul>
+      <li>Reinsert the knob assembly into the case</li>
+    </ul>
+  </div>
+</div>
+
+<div class="repair-step">
+  <div class="repair-step-media"></div>
+  <div class="repair-step-content">
+    <div class="repair-step-header">
+      <span class="repair-step-number">10</span>
+      <h3 class="repair-step-title">Reattach Shaft Retaining Clip</h3>
+    </div>
+    <ul>
+      <li>Using C-clip pliers, reattach the retaining clip to the knob shaft</li>
+    </ul>
+  </div>
+</div>
+
+<div class="repair-step">
+  <div class="repair-step-media"></div>
+  <div class="repair-step-content">
+    <div class="repair-step-header">
+      <span class="repair-step-number">11</span>
+      <h3 class="repair-step-title">Repeat Steps 1-5 in Reverse Order for Reassembly</h3>
+    </div>
+    <ul>
+      <li>Follow Steps 1-5 in reverse order to reassemble your Element IV</li>
     </ul>
   </div>
 </div>
