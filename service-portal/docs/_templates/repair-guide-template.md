@@ -1,10 +1,14 @@
+---
+sidebar_label: [Guide Title]
+---
+
 # [Guide Title]
 
-[Brief description of what this guide covers.]
+[Brief one-line description of what this guide covers.]
 
-**Difficulty:** Easy | Moderate | Advanced  
-**Time:** XX minutes  
-**Tools:** [List required tools]
+**Difficulty:** [Easy / Moderate / Advanced]  
+**Time:** [X minutes]  
+**Tools:** [List of required tools]
 
 ---
 
@@ -38,9 +42,8 @@
       <li>First instruction</li>
       <li>Second instruction</li>
     </ul>
-    <!-- Optional: Add a warning box -->
-    <div class="repair-warning">
-      Warning message here.
+    <div class="repair-info">
+      Optional tip or note for this step.
     </div>
   </div>
 </div>
@@ -58,53 +61,47 @@
       <li>First instruction</li>
       <li>Second instruction</li>
     </ul>
-    <!-- Optional: Add an info box -->
-    <div class="repair-info">
-      Helpful tip or note here.
+    <div class="repair-warning">
+      Optional warning for this step.
     </div>
   </div>
 </div>
 
 ---
 
-## Replacement Parts
-
-[Link to parts or contact info]
-
 ## Need Help?
 
 Contact [JDS Labs Support](https://jdslabs.com/support) for assistance.
 
-
 <!--
-=====================================
-TEMPLATE REFERENCE
-=====================================
+TEMPLATE NOTES:
 
-IMAGES:
-- Place images in: static/img/[product-slug]/
-- Example: static/img/element-iv/knob-step1.jpg
-- Reference as: /img/element-iv/knob-step1.jpg (absolute path)
-- Recommended size: 800x600px or similar 4:3 ratio
+1. IMAGES:
+   - Store images in: static/img/[product-slug]/
+   - Reference with absolute path: /img/[product-slug]/filename.jpg
+   - Leave <div class="repair-step-media"></div> empty if no image for that step
 
-MULTIPLE IMAGES PER STEP:
-<div class="repair-step-media">
-  <img src="/img/[product-slug]/image1.jpg" alt="Description" />
-  <img src="/img/[product-slug]/image2.jpg" alt="Description" />
-</div>
+2. STEP STRUCTURE:
+   - Each step has a numbered badge and title in the header
+   - Use <ul><li> bullet lists for instructions
+   - Add repair-info for tips or repair-warning for cautions
 
-YOUTUBE VIDEO:
-<div class="repair-step-media">
-  <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-</div>
+3. VIDEO EMBEDS (optional):
+   Add before the first step:
+   
+   ## Video Guide
+   
+   <iframe 
+     width="480" 
+     height="400" 
+     src="https://www.youtube.com/embed/VIDEO_ID" 
+     frameBorder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+     allowFullScreen>
+   </iframe>
+   
+   ---
 
-COLORED MARKERS (for callouts in photos):
-<span class="repair-marker">1</span>           (red, default)
-<span class="repair-marker marker-orange">2</span>  (orange)
-<span class="repair-marker marker-yellow">3</span>  (yellow)
-
-BOXES:
-<div class="repair-warning">Warning text</div>
-<div class="repair-info">Info/tip text</div>
-
+4. MARKERS (optional):
+   Use <span class="repair-marker">1</span> to highlight numbered callouts in photos
 -->
