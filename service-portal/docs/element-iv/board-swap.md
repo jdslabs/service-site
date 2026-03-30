@@ -50,6 +50,7 @@ Replace the main board in your Element IV.
       <h3 class="repair-step-title">Remove the Enclosure Screws</h3>
     </div>
     <ul>
+      <li>Use a blade or similar sharp tool to gently pry the rubber feet from the device</li>
       <li>Remove the screws securing the top panel of the Element IV enclosure</li>
       <li>Set the screws aside in a safe place to avoid losing them</li>
     </ul>
@@ -85,7 +86,7 @@ Replace the main board in your Element IV.
     </div>
     <ul>
       <li>Carefully lift the board out of the enclosure</li>
-      <li>Take note of the cable orientations for reassembly</li>
+      <li>Collect the aluminum button and gasket from the rear of the device upon removal</li>
     </ul>
   </div>
 </div>
@@ -97,11 +98,12 @@ Replace the main board in your Element IV.
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">5</span>
-      <h3 class="repair-step-title">Disconnect Internal Cables</h3>
+      <h3 class="repair-step-title">Disconnect Internal Cable</h3>
     </div>
     <ul>
-      <li>Carefully disconnect any ribbon cables or wire harnesses</li>
-      <li>Note the cable orientations for reassembly</li>
+      <li>Carefully disconnect the screen's wire harness</li>
+      <li>Pull from the sides of the connector, not the cable itself</li>
+      <li>Note the cable's orientation for reassembly</li>
     </ul>
   </div>
 </div>
