@@ -26,8 +26,8 @@ const guides = [
     title: 'Knob Repair',
     slug: '/element-iv/knob-repair',
     description: 'Step-by-step guide to replace or repair the volume knob.',
-    difficulty: 'Moderate' as const,
-    time: '20 min',
+    difficulty: 'Advanced' as const,
+    time: '15 min',
     icon: '🔧',
   },
   {
