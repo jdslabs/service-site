@@ -2,8 +2,8 @@
 
 Replace or repair the Element IV volume knob.
 
-**Difficulty:** Moderate  
-**Time:** 20 minutes  
+**Difficulty:** Advanced  
+**Time:** 15 minutes  
 **Tools:** Phillips head screwdriver, C-clip pliers
 
 ## Video Guide
