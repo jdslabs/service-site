@@ -182,9 +182,7 @@ Replace or repair the Element IV volume knob.
     </div>
     <ul>
       <li>Follow Steps 1-5 in reverse order to reassemble your Element IV</li>
-    </ul>
-  </div>
-</div>
+
 
 ---
 
