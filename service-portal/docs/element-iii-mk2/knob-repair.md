@@ -1,6 +1,6 @@
 # Knob Repair
 
-Replace or repair the Element IV volume knob.
+Replace or repair the Element III Mk2 volume knob.
 
 **Difficulty:** Advanced  
 **Time:** 15 minutes  
@@ -27,7 +27,7 @@ Replace or repair the Element IV volume knob.
       <h3 class="repair-step-title">Disconnect Power</h3>
     </div>
     <ul>
-      <li>Unplug the power cable from your Element IV</li>
+      <li>Unplug the power cable from your Element III Mk2</li>
       <li>Disconnect any audio cables (USB, RCA, headphones)</li>
     </ul>
     <div class="repair-warning">
@@ -47,7 +47,7 @@ Replace or repair the Element IV volume knob.
     </div>
     <ul>
       <li>Use a blade or similar sharp tool to gently pry the rubber feet from the device</li>
-      <li>Remove the screws securing the top panel of the Element IV enclosure</li>
+      <li>Remove the screws securing the top panel of the Element III Mk2 enclosure</li>
       <li>Set the screws aside in a safe place to avoid losing them</li>
     </ul>
   </div>
@@ -181,7 +181,7 @@ Replace or repair the Element IV volume knob.
       <h3 class="repair-step-title">Repeat Steps 1-5 in Reverse Order for Reassembly</h3>
     </div>
     <ul>
-      <li>Follow Steps 1-5 in reverse order to reassemble your Element IV</li>
+      <li>Follow Steps 1-5 in reverse order to reassemble your Element III Mk2</li>
     </ul>
   </div>
 </div>
