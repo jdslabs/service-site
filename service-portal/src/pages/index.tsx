@@ -17,7 +17,7 @@ const products = [
     slug: '/products/element-iii-mk2',
     docsSlug: '/element-iii-mk2',
     description: 'Desktop DAC/Amp',
-    guideCount: 1,
+    guideCount: 2,
     image: '/img/products/element-iii-mk2.jpg',
   },
   {
