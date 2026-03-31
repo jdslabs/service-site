@@ -16,7 +16,7 @@ const guides = [
   },
   {
     title: 'Knob Repair',
-    slug: '/element-iii-mk2/troubleshooting',
+    slug: '/element-iii-mk2/knob-repair',
     description: 'Step-by-step guide to repair or replace the volume knob',
     difficulty: 'Advanced' as const,
     time: '15 min',
@@ -24,7 +24,7 @@ const guides = [
   },
   {
     title: 'Board Swap',
-    slug: '/element-iii-mk2/troubleshooting',
+    slug: '/element-iii-mk2/board-swap',
     description: 'Replace the main board in your Element III Mk 2',
     difficulty: 'Moderate' as const,
     time: '10 min',
