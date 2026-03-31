@@ -85,6 +85,9 @@ Replace or repair the Element III Mk2 volume knob.
       <li>Collect the aluminum button and gasket from the rear of the device upon removal</li>
       <li>Avoid excessive strain on the screen's cable</li>
     </ul>
+     <div class="repair-info">
+      NOTE: for simply tightening the knob shaft, no further disassembly is required. If applicable, tighten the shaft to the knob using pliers on the flat spots of the shaft, as shown in the above video.  Once done, follow the previous steps in reverse order for reassembly.
+    </div>
   </div>
 </div>
 

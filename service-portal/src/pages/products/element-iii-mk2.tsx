@@ -32,6 +32,15 @@ const guides = [
     icon: '🔌',
     hasVideo: true,
   },
+  {
+    title: 'Knob Lubrication',
+    slug: '/element-iii-mk2/knob-grease',
+    description: 'Step-by-step guide to relubricate the volume knob.',
+    difficulty: 'Advanced' as const,
+    time: '15 min',
+    icon: '🛢️',
+    hasVideo: true,
+  },
 ];
 
 export default function ElementIIIMk2() {

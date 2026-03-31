@@ -85,6 +85,9 @@ Replace or repair the Element IV volume knob.
       <li>Collect the aluminum button and gasket from the rear of the device upon removal</li>
       <li>Avoid excessive strain on the screen's cable</li>
     </ul>
+      <div class="repair-info">
+      NOTE: for simply tightening the knob shaft, no further disassembly is required. If applicable, tighten the shaft to the knob using pliers on the flat spots of the shaft, as shown in the above video.  Once done, follow the previous steps in reverse order for reassembly.
+    </div>
   </div>
 </div>
 
@@ -106,7 +109,9 @@ Replace or repair the Element IV volume knob.
 </div>
 
 <div class="repair-step">
-  <div class="repair-step-media"></div>
+  <div class="repair-step-media">
+    <img src="/img/element-iv/el4-knob-5.JPG" alt="Remove retaining clip from knob shaft" />
+  </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">6</span>
@@ -120,7 +125,9 @@ Replace or repair the Element IV volume knob.
 </div>
 
 <div class="repair-step">
-  <div class="repair-step-media"></div>
+  <div class="repair-step-media">
+    <img src="/img/element-iv/el4-knob-6.JPG" alt="Remove knob assembly" />
+  </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">7</span>
@@ -134,7 +141,9 @@ Replace or repair the Element IV volume knob.
 </div>
 
 <div class="repair-step">
-  <div class="repair-step-media"></div>
+  <div class="repair-step-media">
+    <img src="/img/element-iv/el4-knob-7.JPG" alt="Tighten the knob shaft to the knob" />
+  </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">8</span>
@@ -148,7 +157,9 @@ Replace or repair the Element IV volume knob.
 </div>
 
 <div class="repair-step">
-  <div class="repair-step-media"></div>
+  <div class="repair-step-media">
+    <img src="/img/element-iv/el4-knob-8.JPG" alt="Reinsert knob assembly into case" />
+  </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">9</span>
@@ -161,7 +172,9 @@ Replace or repair the Element IV volume knob.
 </div>
 
 <div class="repair-step">
-  <div class="repair-step-media"></div>
+  <div class="repair-step-media">
+    <img src="/img/element-iv/el4-knob-9.JPG" alt="Reattach shaft retaining clip" />
+  </div>
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">10</span>
@@ -170,6 +183,9 @@ Replace or repair the Element IV volume knob.
     <ul>
       <li>Using C-clip pliers, reattach the retaining clip to the knob shaft</li>
     </ul>
+     <div class="repair-info">
+      To ensure the retaining clip is seated properly, apply downward pressure on the case to expose the ring's groove on the shaft.
+    </div>
   </div>
 </div>
 

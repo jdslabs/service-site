@@ -31,6 +31,7 @@ const sidebars = {
         'element-iii-mk2/quickstart',
         'element-iii-mk2/manuals',
         'element-iii-mk2/troubleshooting',
+        'element-iii-mk2/knob-grease',
       ],
     },
     {

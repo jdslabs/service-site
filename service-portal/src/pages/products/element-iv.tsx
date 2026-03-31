@@ -40,6 +40,15 @@ const guides = [
     icon: '🔌',
     hasVideo: true,
   },
+  {
+    title: 'Knob Lubrication',
+    slug: '/element-iv/knob-grease',
+    description: 'Step-by-step guide to relubricate the volume knob.',
+    difficulty: 'Advanced' as const,
+    time: '15 min',
+    icon: '🛢️',
+    hasVideo: true,
+  },
 ];
 
 export default function ElementIV() {
