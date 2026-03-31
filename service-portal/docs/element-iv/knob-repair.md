@@ -188,9 +188,7 @@ Replace or repair the Element IV volume knob.
 
 ---
 
-## Replacement Parts
 
-Replacement knobs are available at [jdslabs.com](https://jdslabs.com).
 
 ## Need Help?
 
