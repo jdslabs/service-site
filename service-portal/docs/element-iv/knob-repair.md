@@ -110,7 +110,7 @@ Replace or repair the Element IV volume knob.
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">6</span>
-      <h3 class="repair-step-title">Use C-Clip Pliers to Remove Retaining Clip from Knob Shaft</h3>
+      <h3 class="repair-step-title">Remove Retaining Clip from Knob Shaft</h3>
     </div>
     <ul>
       <li>Using C-clip pliers, carefully remove the retaining clip from the knob shaft</li>
