@@ -114,7 +114,7 @@ Replace or repair the Element IV volume knob.
     </div>
     <ul>
       <li>Using C-clip pliers, carefully remove the retaining clip from the knob shaft</li>
-      <li>Set the clip aside in a safe place</li>
+      <li>Avoid expanding the retaining clip much further than needed to prevent bending</li>
     </ul>
   </div>
 </div>
@@ -127,7 +127,8 @@ Replace or repair the Element IV volume knob.
       <h3 class="repair-step-title">Remove Knob Assembly</h3>
     </div>
     <ul>
-      <li>Remove the knob assembly from the board</li>
+      <li>With the enclosure facing knob-side-down, life the case off of the knob assembly</li>
+      <li>Take note of the stack order (washer, spring, washer)</li>
     </ul>
   </div>
 </div>
@@ -137,7 +138,7 @@ Replace or repair the Element IV volume knob.
   <div class="repair-step-content">
     <div class="repair-step-header">
       <span class="repair-step-number">8</span>
-      <h3 class="repair-step-title">Using Pliers, Gently Grab the Flat Portion of the Knob Shaft and Rotate Clockwise to Tighten</h3>
+      <h3 class="repair-step-title">Tighten the Knob Shaft to the Knob</h3>
     </div>
     <ul>
       <li>Using pliers, gently grab the flat portion of the knob shaft</li>
@@ -154,7 +155,7 @@ Replace or repair the Element IV volume knob.
       <h3 class="repair-step-title">Reinsert Knob Assembly into Case</h3>
     </div>
     <ul>
-      <li>Reinsert the knob assembly into the case</li>
+      <li>Ensure the spring is sandwiched between the washers on the knob shaft during reassembly</li>
     </ul>
   </div>
 </div>
