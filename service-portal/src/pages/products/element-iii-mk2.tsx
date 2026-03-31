@@ -15,12 +15,20 @@ const guides = [
     icon: '📖',
   },
   {
-    title: 'Troubleshooting',
+    title: 'Knob Repair',
     slug: '/element-iii-mk2/troubleshooting',
-    description: 'Common issues and solutions.',
-    difficulty: 'Easy' as const,
+    description: 'Step-by-step guide to repair or replace the volume knob',
+    difficulty: 'Advanced' as const,
+    time: '15 min',
+    icon: '🔧',
+  },
+  {
+    title: 'Board Swap',
+    slug: '/element-iii-mk2/troubleshooting',
+    description: 'Replace the main board in your Element III Mk 2',
+    difficulty: 'Moderate' as const,
     time: '10 min',
-    icon: '🔍',
+    icon: '🔌',
   },
 ];
 
