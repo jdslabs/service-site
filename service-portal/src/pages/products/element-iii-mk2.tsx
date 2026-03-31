@@ -21,6 +21,7 @@ const guides = [
     difficulty: 'Advanced' as const,
     time: '15 min',
     icon: '🔧',
+    hasVideo: true,
   },
   {
     title: 'Board Swap',
@@ -29,6 +30,7 @@ const guides = [
     difficulty: 'Moderate' as const,
     time: '10 min',
     icon: '🔌',
+    hasVideo: true,
   },
 ];
 
