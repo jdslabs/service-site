@@ -22,6 +22,19 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Element III Mk 2',
+      link: {
+        type: 'doc',
+        id: 'element-iii-mk2/index',
+      },
+      items: [
+        'element-iii-mk2/quickstart',
+        'element-iii-mk2/manuals',
+        'element-iii-mk2/troubleshooting',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Atom DAC 2',
       link: {
         type: 'doc',

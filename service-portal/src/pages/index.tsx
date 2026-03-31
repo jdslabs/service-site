@@ -13,6 +13,14 @@ const products = [
     image: 'https://jdslabs.com/media/cache/43/02/4302a7fb34a39c935136a30b000048ca.jpg',
   },
   {
+    name: 'Element III Mk 2',
+    slug: '/products/element-iii-mk2',
+    docsSlug: '/element-iii-mk2',
+    description: 'Desktop DAC/Amp',
+    guideCount: 1,
+    image: '/img/products/element-iii-mk2.jpg',
+  },
+  {
     name: 'Atom DAC 2',
     slug: '/products/atom-dac-2',
     docsSlug: '/atom-dac-2',
