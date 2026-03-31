@@ -4,7 +4,7 @@ sidebar_label: Board Swap
 
 # Board Swap
 
-Replace the main board in your Element IV.
+Replace the main board in your Element III Mk2.
 
 **Difficulty:** Moderate  
 **Time:** 10 minutes  
@@ -31,7 +31,7 @@ Replace the main board in your Element IV.
       <h3 class="repair-step-title">Disconnect Power</h3>
     </div>
     <ul>
-      <li>Unplug the power cable from your Element IV</li>
+      <li>Unplug the power cable from your Element III Mk2</li>
       <li>Disconnect any audio cables (USB, RCA, headphones)</li>
     </ul>
     <div class="repair-warning">
@@ -51,7 +51,7 @@ Replace the main board in your Element IV.
     </div>
     <ul>
       <li>Use a blade or similar sharp tool to gently pry the rubber feet from the device</li>
-      <li>Remove the screws securing the top panel of the Element IV enclosure</li>
+      <li>Remove the screws securing the top panel of the Element III Mk2 enclosure</li>
       <li>Set the screws aside in a safe place to avoid losing them</li>
     </ul>
   </div>
@@ -117,11 +117,8 @@ Replace the main board in your Element IV.
       <h3 class="repair-step-title">Repeat Steps 1-5 in Reverse Order for Reassembly</h3>
     </div>
     <ul>
-      <li>Follow Steps 1-5 in reverse order to reassemble your Element IV with the new board</li>
+      <li>Follow Steps 1-5 in reverse order to reassemble your Element III Mk2 with the new board</li>
     </ul>
-    <div class="repair-info">
-      You may need to update the firmware after installing a new board. See the <a href="/element-iv/firmware-update">Firmware Update</a> guide.
-    </div>
   </div>
 </div>
 
