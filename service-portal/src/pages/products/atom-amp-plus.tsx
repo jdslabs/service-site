@@ -22,6 +22,14 @@ const guides = [
     time: '10 min',
     icon: '🔧',
   },
+  {
+    title: 'Main Board Replacement',
+    slug: '/atom-amp-plus/board-swap',
+    description: 'Replace the main board in your Atom Amp+.',
+    difficulty: 'Moderate' as const,
+    time: '10 min',
+    icon: '🔌',
+  },
 ];
 
 export default function AtomAmpPlus() {

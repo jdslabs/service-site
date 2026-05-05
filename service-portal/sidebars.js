@@ -58,6 +58,7 @@ const sidebars = {
         'atom-amp-2/quickstart',
         'atom-amp-2/manuals',
         'atom-amp-2/troubleshooting',
+        'atom-amp-2/board-swap',
       ],
     },
     {
@@ -71,6 +72,7 @@ const sidebars = {
         'atom-amp-plus/quickstart',
         'atom-amp-plus/manuals',
         'atom-amp-plus/troubleshooting',
+        'atom-amp-plus/board-swap',
       ],
     },
     {
