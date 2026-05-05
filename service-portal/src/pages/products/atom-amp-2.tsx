@@ -3,24 +3,10 @@ import ProductPage from '@site/src/components/ProductPage';
 
 const guides = [
   {
-    title: 'Quickstart',
-    slug: '/atom-amp-2/quickstart',
-    description: 'Get up and running with your Atom Amp 2.',
-    icon: '🚀',
-  },
-  {
     title: 'Manuals',
     slug: '/atom-amp-2/manuals',
     description: 'Complete specifications and reference documentation.',
     icon: '📖',
-  },
-  {
-    title: 'Troubleshooting',
-    slug: '/atom-amp-2/troubleshooting',
-    description: 'Common issues: noise, hum, volume imbalance.',
-    difficulty: 'Moderate' as const,
-    time: '10 min',
-    icon: '🔧',
   },
   {
     title: 'Main Board Replacement',

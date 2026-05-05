@@ -30,7 +30,6 @@ const sidebars = {
       items: [
         'element-iii-mk2/quickstart',
         'element-iii-mk2/manuals',
-        'element-iii-mk2/troubleshooting',
         'element-iii-mk2/knob-grease',
       ],
     },
@@ -42,9 +41,7 @@ const sidebars = {
         id: 'atom-dac-2/index',
       },
       items: [
-        'atom-dac-2/quickstart',
         'atom-dac-2/manuals',
-        'atom-dac-2/troubleshooting',
       ],
     },
     {
@@ -55,9 +52,7 @@ const sidebars = {
         id: 'atom-amp-2/index',
       },
       items: [
-        'atom-amp-2/quickstart',
         'atom-amp-2/manuals',
-        'atom-amp-2/troubleshooting',
         'atom-amp-2/board-swap',
       ],
     },
@@ -69,9 +64,7 @@ const sidebars = {
         id: 'atom-amp-plus/index',
       },
       items: [
-        'atom-amp-plus/quickstart',
         'atom-amp-plus/manuals',
-        'atom-amp-plus/troubleshooting',
         'atom-amp-plus/board-swap',
       ],
     },
@@ -83,24 +76,22 @@ const sidebars = {
         id: 'atom-phono/index',
       },
       items: [
-        'atom-phono/quickstart',
         'atom-phono/manuals',
-        'atom-phono/troubleshooting',
       ],
     },
-    {
-      type: 'category',
-      label: 'Synapse',
-      link: {
-        type: 'doc',
-        id: 'synapse/index',
-      },
-      items: [
-        'synapse/quickstart',
-        'synapse/manuals',
-        'synapse/troubleshooting',
-      ],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'Synapse',
+    //   link: {
+    //     type: 'doc',
+    //     id: 'synapse/index',
+    //   },
+    //   items: [
+    //     'synapse/quickstart',
+    //     'synapse/manuals',
+    //     'synapse/troubleshooting',
+    //   ],
+    // },
   ],
 };
 

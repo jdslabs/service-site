@@ -3,24 +3,10 @@ import ProductPage from '@site/src/components/ProductPage';
 
 const guides = [
   {
-    title: 'Quickstart',
-    slug: '/atom-phono/quickstart',
-    description: 'Get up and running with your Atom Phono.',
-    icon: '🚀',
-  },
-  {
     title: 'Manuals',
     slug: '/atom-phono/manuals',
     description: 'Complete specifications and reference documentation.',
     icon: '📖',
-  },
-  {
-    title: 'Troubleshooting',
-    slug: '/atom-phono/troubleshooting',
-    description: 'Common issues: hum, grounding, cartridge setup.',
-    difficulty: 'Moderate' as const,
-    time: '10 min',
-    icon: '🔧',
   },
 ];
 
