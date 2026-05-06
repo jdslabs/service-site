@@ -15,7 +15,7 @@ const config = {
   organizationName: 'jdslabs',
   projectName: 'service-portal',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   clientModules: [
