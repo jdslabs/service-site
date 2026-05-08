@@ -48,6 +48,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{ name: 'robots', content: 'noindex, nofollow' }],
       image: 'img/jdslabs-social-card.jpg',
       navbar: {
         title: 'JDS LABS',
