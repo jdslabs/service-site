@@ -2,12 +2,12 @@ import React from 'react';
 import ProductPage from '@site/src/components/ProductPage';
 
 const guides = [
-  {
-    title: 'Manuals',
-    slug: '/atom-amp-2/manuals',
-    description: 'Complete specifications and reference documentation.',
-    icon: '📖',
-  },
+  // {
+  //   title: 'Manuals',
+  //   slug: '/atom-amp-2/manuals',
+  //   description: 'Complete specifications and reference documentation.',
+  //   icon: '📖',
+  // },
   {
     title: 'Main Board Replacement',
     slug: '/atom-amp-2/board-swap',

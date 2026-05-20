@@ -2,18 +2,18 @@ import React from 'react';
 import ProductPage from '@site/src/components/ProductPage';
 
 const guides = [
-  {
-    title: 'Quickstart',
-    slug: '/element-iii-mk2/quickstart',
-    description: 'Get up and running with your Element III Mk 2.',
-    icon: '🚀',
-  },
-  {
-    title: 'Manuals',
-    slug: '/element-iii-mk2/manuals',
-    description: 'Complete user manual and reference documentation.',
-    icon: '📖',
-  },
+  // {
+  //   title: 'Quickstart',
+  //   slug: '/element-iii-mk2/quickstart',
+  //   description: 'Get up and running with your Element III Mk 2.',
+  //   icon: '🚀',
+  // },
+  // {
+  //   title: 'Manuals',
+  //   slug: '/element-iii-mk2/manuals',
+  //   description: 'Complete user manual and reference documentation.',
+  //   icon: '📖',
+  // },
   {
     title: 'Knob Repair',
     slug: '/element-iii-mk2/knob-repair',

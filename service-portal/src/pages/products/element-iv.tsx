@@ -2,26 +2,26 @@ import React from 'react';
 import ProductPage from '@site/src/components/ProductPage';
 
 const guides = [
-  {
-    title: 'Quickstart',
-    slug: '/element-iv/quickstart',
-    description: 'Get up and running with your Element IV in minutes.',
-    icon: '🚀',
-  },
-  {
-    title: 'Manuals',
-    slug: '/element-iv/manuals',
-    description: 'Complete user manual and reference documentation.',
-    icon: '📖',
-  },
-  {
-    title: 'Firmware Update',
-    slug: '/element-iv/firmware-update',
-    description: 'How to update Element IV firmware using the Core™ app.',
-    difficulty: 'Easy' as const,
-    time: '2 min',
-    icon: '⬆️',
-  },
+  // {
+  //   title: 'Quickstart',
+  //   slug: '/element-iv/quickstart',
+  //   description: 'Get up and running with your Element IV in minutes.',
+  //   icon: '🚀',
+  // },
+  // {
+  //   title: 'Manuals',
+  //   slug: '/element-iv/manuals',
+  //   description: 'Complete user manual and reference documentation.',
+  //   icon: '📖',
+  // },
+  // {
+  //   title: 'Firmware Update',
+  //   slug: '/element-iv/firmware-update',
+  //   description: 'How to update Element IV firmware using the Core™ app.',
+  //   difficulty: 'Easy' as const,
+  //   time: '2 min',
+  //   icon: '⬆️',
+  // },
   {
     title: 'Knob Repair',
     slug: '/element-iv/knob-repair',

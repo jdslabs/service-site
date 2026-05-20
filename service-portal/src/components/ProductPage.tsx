@@ -68,7 +68,6 @@ export default function ProductPage({ name, description, image, guides }: Produc
             </div>
             <div>
               <h1 className={styles.productName}>{name}</h1>
-              <p className={styles.productDescription}>{description}</p>
             </div>
           </div>
         </div>

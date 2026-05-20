@@ -11,26 +11,23 @@ const products = [
     description: 'Flagship DAC/Amp with Core™',
     guideCount: 3,
     image: 'https://jdslabs.com/media/cache/43/02/4302a7fb34a39c935136a30b000048ca.jpg',
-    hasQuickstart: true,
   },
   {
     name: 'Element III Mk 2',
     slug: '/products/element-iii-mk2',
     docsSlug: '/element-iii-mk2',
     description: 'Desktop DAC/Amp',
-    guideCount: 1,
+    guideCount: 3,
     image: '/img/products/element-iii-mk2.jpg',
-    hasQuickstart: true,
   },
-  {
-    name: 'Atom DAC 2',
-    slug: '/products/atom-dac-2',
-    docsSlug: '/atom-dac-2',
-    description: 'High-performance USB DAC',
-    guideCount: 0,
-    image: '/img/products/atom-dac-2.jpg',
-    hasQuickstart: false,
-  },
+  // {
+  //   name: 'Atom DAC 2',
+  //   slug: '/products/atom-dac-2',
+  //   docsSlug: '/atom-dac-2',
+  //   description: 'High-performance USB DAC',
+  //   guideCount: 0,
+  //   image: '/img/products/atom-dac-2.jpg',
+  // },
   {
     name: 'Atom Amp 2',
     slug: '/products/atom-amp-2',
@@ -38,7 +35,6 @@ const products = [
     description: 'Desktop headphone amplifier',
     guideCount: 1,
     image: '/img/products/atom-amp-2.jpg',
-    hasQuickstart: false,
   },
   {
     name: 'Atom Amp+',
@@ -47,17 +43,15 @@ const products = [
     description: 'Desktop headphone amplifier',
     guideCount: 1,
     image: '/img/products/atom-amp-plus.jpg',
-    hasQuickstart: false,
   },
-  {
-    name: 'Atom Phono',
-    slug: '/products/atom-phono',
-    docsSlug: '/atom-phono',
-    description: 'Phono preamp & tone control',
-    guideCount: 0,
-    image: '/img/products/atom-phono.jpg',
-    hasQuickstart: false,
-  },
+  // {
+  //   name: 'Atom Phono',
+  //   slug: '/products/atom-phono',
+  //   docsSlug: '/atom-phono',
+  //   description: 'Phono preamp & tone control',
+  //   guideCount: 0,
+  //   image: '/img/products/atom-phono.jpg',
+  // },
   // {
   //   name: 'Synapse / Synapse Max',
   //   slug: '/products/synapse',
@@ -92,16 +86,6 @@ function ProductCard({ product }) {
           </div>
         </div>
       </Link>
-      <div className={styles.productActions}>
-        {product.hasQuickstart && (
-          <Link to={`${product.docsSlug}/quickstart`} className={styles.actionButton}>
-            Quickstart
-          </Link>
-        )}
-        <Link to={`${product.docsSlug}/manuals`} className={styles.actionButton}>
-          Manuals
-        </Link>
-      </div>
     </div>
   );
 }

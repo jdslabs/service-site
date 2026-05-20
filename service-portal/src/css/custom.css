@@ -80,21 +80,50 @@
 .navbar {
   background-color: #1F1F22;
   box-shadow: none;
-  height: 56px;
+  height: 60px;
+  padding: 0 1rem;
+}
+
+.navbar__inner {
+  max-width: 100%;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .navbar__logo {
-  height: 3rem;
-  width: 3rem;
-  margin-right: 1rem;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.625rem;
 }
 
 .navbar__title {
   font-family: 'PFDin', sans-serif;
   font-weight: 700;
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   letter-spacing: 0.12em;
   color: #ffffff;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 56px;
+    padding: 0 0.75rem;
+  }
+  
+  .navbar__logo {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 0.5rem;
+  }
+  
+  .navbar__title {
+    font-size: 1.25rem;
+  }
 }
 
 .navbar__link {
@@ -265,6 +294,19 @@ pre code {
 
 .breadcrumbs__link:hover {
   color: #B32D2A;
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs__item--active .breadcrumbs__link,
+  .breadcrumbs__item:last-child .breadcrumbs__link {
+    background: none;
+    padding: 0;
+  }
+  
+  .breadcrumbs__item--active,
+  .breadcrumbs__item:last-child {
+    background: none;
+  }
 }
 
 /* Tags */
@@ -582,5 +624,24 @@ aside.theme-doc-sidebar-container,
   .repair-step {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+}
+
+/* Responsive YouTube/iframe embeds */
+article iframe[src*="youtube"],
+.markdown iframe[src*="youtube"],
+.theme-doc-markdown iframe[src*="youtube"] {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 768px) {
+  article iframe[src*="youtube"],
+  .markdown iframe[src*="youtube"],
+  .theme-doc-markdown iframe[src*="youtube"] {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
   }
 }
