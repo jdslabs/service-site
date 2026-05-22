@@ -2,7 +2,7 @@
 
 Replace or repair the Element III Mk2 volume knob.
 
-**Difficulty:** Advanced  
+**Difficulty:** Moderate  
 **Time:** 15 minutes  
 **Tools:** Phillips head screwdriver, C-clip pliers
 

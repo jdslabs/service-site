@@ -12,7 +12,7 @@ const guides = [
     title: 'Main Board Replacement',
     slug: '/atom-amp-plus/board-swap',
     description: 'Replace the main board in your Atom Amp+.',
-    difficulty: 'Moderate' as const,
+    difficulty: 'Easy' as const,
     time: '10 min',
     icon: '🔌',
   },

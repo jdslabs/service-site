@@ -18,7 +18,7 @@ const guides = [
     title: 'Troubleshooting',
     slug: '/synapse/troubleshooting',
     description: 'Common issues: device detection, power requirements.',
-    difficulty: 'Moderate' as const,
+    difficulty: 'Easy' as const,
     time: '10 min',
     icon: '🔧',
   },

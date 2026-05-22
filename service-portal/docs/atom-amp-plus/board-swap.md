@@ -6,7 +6,7 @@ sidebar_label: Main Board Replacement
 
 Replace the main board in your Atom Amp+.
 
-**Difficulty:** Moderate  
+**Difficulty:** Easy  
 **Time:** 10 minutes  
 **Tools:** Torx screwdriver
 

@@ -2,7 +2,7 @@
 
 Relubricate the Element III Mk 2 volume knob.
 
-**Difficulty:** Advanced  
+**Difficulty:** Moderate  
 **Time:** 15 minutes  
 **Tools:** Phillips head screwdriver, C-clip pliers
 
