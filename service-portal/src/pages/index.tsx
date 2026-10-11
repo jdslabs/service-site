@@ -45,6 +45,14 @@ const products = [
     image: '/img/products/atom-amp-plus.jpg',
   },
   {
+    name: 'Atom DAC+',
+    slug: '/products/atom-dac-plus',
+    docsSlug: '/atom-dac-plus',
+    description: 'Desktop USB DAC',
+    guideCount: 1,
+    image: '/img/products/atom-dac-plus.jpg',
+  },
+  {
     name: 'Atom Phono',
     slug: '/products/atom-phono',
     docsSlug: '/atom-phono',

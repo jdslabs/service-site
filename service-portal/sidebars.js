@@ -46,6 +46,17 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Atom DAC+',
+      link: {
+        type: 'doc',
+        id: 'atom-dac-plus/index',
+      },
+      items: [
+        'atom-dac-plus/light-ring-repair',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Atom Amp 2',
       link: {
         type: 'doc',
